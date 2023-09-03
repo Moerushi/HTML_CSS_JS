@@ -1,0 +1,25 @@
+h1 {
+  color: green;
+}
+
+h2 {
+  color:violet;
+}
+
+#first {
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.header {
+  background-color: yellow;
+}
+
+.title {
+  background-color:chartreuse;
+}
+
+.title2 {
+  background-color: aquamarine;
+  color: orange ;
+}
