@@ -4,6 +4,10 @@ h1 {
 
 h2 {
   color:violet;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  text-align: right;
 }
 
 #first {
@@ -22,4 +26,33 @@ h2 {
 .title2 {
   background-color: aquamarine;
   color: orange ;
+}
+
+ul {
+  list-style-type: armenian;
+  list-style-position: inside;
+}
+
+.sec {
+  list-style-type:disc;
+}
+
+.thi {
+  list-style-type: georgian;
+}
+
+.onepar {
+  text-align: center;
+  text-decoration: overline;
+  text-transform: lowercase;
+}
+
+.twopar {
+  text-align: justify;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+html {
+  background-color: bisque;
 }
