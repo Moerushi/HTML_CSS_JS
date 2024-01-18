@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Bungee';
+    src: url(./fonts/BungeeSpice-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', sans-serif;
+}
+
+:root {
+    --primary-color: #d2f705;
+    --secondary-color: #45501d;
+    --font-family: 'Bungee', sans-serif;
+    --border-color: blue;     
+    
+  }
+
+body {
+    font-family: 'Bungee', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;   
+}
+
+.menu {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+.menu:hover {
+    color: rgb(92, 243, 5);
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+.menu:active {
+    background-color:rgb(16, 36, 5);
+    
+}
+
+h1 {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    
+}
+.parag {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987
+
+}
+.h2_main {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px; 
+}
+.input_page3 {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.input_button3 {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.par_1_1 {
+    margin: 10px;
+    padding: 20px;
+
+}
+.par_2_1 {
+    margin: 20px 30px 20px 40px;
+    padding: 30px;
+}
+.par_2_1:hover {
+    background-color: aqua;
+}
+
+.div_2 p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987
+}
+p:first-child {
+    background-color: red;
+}
+.div_2 p:nth-child(odd) {
+    font-size: 30px;
+}
+
+.card {
+    background-color: #d2f705;
+}
+
+
+
+
+
+
+
+
