@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header_nav_link {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* часть header'а */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 82.71px;
+    padding-left: 30px;
+}
+
+.header_logo {
+    margin-top: 40px;
+    margin-right: 14px;
+}
+
+.header_logo_img {
+    width: 35px;
+    height: 40px;
+}
+
+.header_text {
+    margin-top: 45px;
+    margin-right: 346px;
+}
+
+.header_text_black {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_text_red {
+    color: #F25822;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_nav {
+    display: flex;
+    padding-top: 51px;
+    gap: 20px;
+}
+
+
+/* часть main'а */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.main_content_heading {
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 522px;
+    height: 222px;
+}
+
+.main_content_text {
+    color: #888;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 17px;
+    width: 466px;
+    height: 48px;
+}
+
+.main_content_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 72px;
+    margin-top: 37px;
+}
+
+.main_content_button_start {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+
+.main_content_watchvideo {
+    color: #AAA;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_image {
+    margin-bottom: 162.45px;
+    margin-left: 40.94px;
+    width: 544.814px;
+    height: 374.843px;
+}
+
+
+/* часть footer'а */
+
+.footer {
+    display: flex;
+    gap: 48px;
+    padding-top: 97px;
+    padding-bottom: 96px;
+}
+
+.footer_img {
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+}
