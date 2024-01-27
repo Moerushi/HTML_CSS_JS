@@ -69,6 +69,7 @@
 .header_nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
     margin-top: 51px;
     margin-bottom: 94px;
     width: 533px;
@@ -93,6 +94,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.header_nav_link_v {
+    width: 6px;
+    height: 3px;
+    margin-bottom: 3px;
 }
 
 
