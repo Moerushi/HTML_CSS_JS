@@ -1,0 +1,49 @@
+// Подключение файла с переменными
+@import 'vars';
+
+@mixin content() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+%font {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: $contentWidth;
+
+  &__heading {
+    color: $contentColor;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: $textGap;
+
+  &__link {
+    text-decoration: none;
+    @extend font;
+  }
+}
+
+.content {
+  display: flex;
+  gap: $textGap;
+  @include content();
+
+  &__item {
+    width: $contentWidth/4;
+    border: $siteBorder;
+    height: 200px;
+  }
+}
