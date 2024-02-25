@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky content</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .menu {
+      top: 20%;
+      position: sticky;
+      width: 20%;
+      margin-left: 10%;
+      margin-bottom: 10%;
+    }
+
+    .content,
+    .main {
+      min-height: 700px;
+      background-color: grey;
+    }
+
+    .parallax {
+      min-height: 350px;
+      background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-crystal-blue-ocean-waves_181624-48854.jpg?t=st=1708688215~exp=1708691815~hmac=374a73fb820c54fdc483aa2e17aabefc6166c3fd8c668226d0be429dc0ae18ba&w=1480);
+      background-attachment: fixed;
+    }
+
+    .top-main {
+      margin-left: 20%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="content">
+    <nav class="menu">
+      <ul>
+        <li><a href="#main1" class="link">link-1</a></li>
+        <li><a href="#main2" class="link">link-2</a></li>
+        <li><a href="#main3" class="link">link-3</a></li>
+        <li><a href="#main4" class="link">link-4</a></li>
+      </ul>
+    </nav>
+    <div class="top-main">
+<article>
+  <h3 id="main1">Heading</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsa et assumenda pariatur architecto facere repudiandae. Excepturi totam, facere optio eos sint placeat error officia nostrum ipsum, similique consectetur dolore voluptate harum nemo ex labore iste nesciunt corporis cum consequatur? Rerum quidem quisquam facilis nobis illo magnam necessitatibus maxime. Consequuntur illo autem fuga? Ullam optio quis vero repellendus dolor, ipsam facere tempora pariatur et consectetur reiciendis atque placeat iste doloremque fugiat excepturi. Ipsam neque sed reiciendis. Ad beatae repudiandae ducimus minus dicta, ab iusto quos, sed temporibus blanditiis explicabo architecto accusamus ut saepe a quam laborum illum. Nesciunt, soluta at!</p>
+</article>
+<article>
+  <h3 id="main2">Heading</h3>
+  <p>Repellat, deleniti. Quas eum fuga aliquam, qui exercitationem nam at deleniti fugiat voluptas veritatis distinctio dolorem totam ea ullam provident sed accusamus numquam vel ipsam rem ad accusantium. Expedita ipsum consectetur commodi, labore repudiandae illo eos minus ex unde exercitationem! Praesentium, suscipit nobis distinctio consequuntur, quaerat ex expedita nemo tempore fuga nesciunt nostrum cum laboriosam iure, doloremque laudantium fugiat esse maiores necessitatibus ipsam impedit sequi obcaecati. Esse, corrupti nesciunt at id nulla eveniet ratione facilis exercitationem fugiat ducimus nemo quisquam consectetur delectus voluptatem! Nemo necessitatibus distinctio qui officia alias debitis, officiis in similique odit placeat voluptas, exercitationem et ullam optio.</p>
+</article>
+<article>
+  <h3 id="main3">Heading</h3>
+  <p>Voluptas voluptatem eius excepturi alias repellat, atque modi odio veritatis illo magnam sint a laboriosam magni fugiat repudiandae deleniti quaerat ratione! Dolor debitis, nemo quisquam aperiam necessitatibus eaque eligendi sunt sed inventore architecto iusto impedit, mollitia voluptate dolorem commodi iure reiciendis tempora porro deserunt possimus. Molestias consequatur necessitatibus architecto illum, provident veritatis animi iure tenetur repellendus vitae mollitia, maxime nesciunt ipsa dicta. Sint a iste laborum maxime adipisci quidem voluptates modi porro, sunt dolorem corporis perspiciatis unde id accusamus sapiente numquam minima maiores possimus quae fugiat doloremque aliquam? Laboriosam adipisci, beatae laborum corrupti cum culpa dignissimos sunt autem unde explicabo.</p>
+</article>
+<article>
+  <h3 id="main4">Heading</h3>
+  <p>Ipsa vel quidem, doloremque officiis quasi nobis accusantium quos facilis quaerat, a veniam nisi minima expedita? Sunt eligendi porro eum earum reiciendis reprehenderit aliquam quaerat facere ratione maxime, ex nostrum perferendis distinctio, corporis eveniet et aut consectetur consequuntur facilis. Quas aliquam soluta, dolore molestias rerum doloremque commodi aut animi? Et exercitationem impedit autem eos qui assumenda iste quae delectus quibusdam explicabo est aspernatur nisi dolores debitis obcaecati, eum nobis eligendi tenetur consequatur. Hic, sed sint. Eveniet non quam distinctio, laudantium odit ea quod quis impedit vel repudiandae autem placeat magnam dolorum temporibus dolore aperiam voluptate! Aperiam veniam sapiente illum nemo!</p>
+</article>
+    </div>
+  </div>
+  <div class="parallax"></div>
+  <div class="main">
+    <header class="header">
+      <h1>This is heading.</h1>
+    </header>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</body>
+
+</html>

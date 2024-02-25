@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.toggle {
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(228, 84, 76);
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 5px black;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  transition: justify-content 10s;
+}
+
+#check {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+
+#check:checked ~ .toggle {
+  background-color: rgb(99, 205, 106);
+  justify-content: right;
+}
+
+.switch {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px black;
+}/*# sourceMappingURL=style.css.map */

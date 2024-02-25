@@ -1,0 +1,66 @@
+.offer {
+  @include flex (_, column, _);
+  flex-wrap: nowrap;
+  margin-top: 65px;
+  margin-bottom: 96px;
+  gap: 30px;
+
+  &__top {
+    @include flex (center, row, center);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  &__top-card {
+    position: relative;
+    @include flex (center, _, center);
+    box-sizing: content-box;
+    width: 100%;
+    min-height: 260px;
+    background-size: cover;
+  }
+
+  &__bottom {
+    @include flex (center, _, center);
+  }
+
+  &__bottom-card {
+    position: relative;
+    @include flex (center, _, center);
+    min-width: 100%;
+    min-height: 180px;
+    background-size: cover;
+  }
+
+  &__card-textbox {
+    z-index: 10;
+  }
+
+  &__card-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__card-text:last-child {
+    color: $highlightedSiteColor;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__filter {
+    width: 100%;
+    height: 100%;
+    @include for-absolute-zero (left);
+    background: $darkBackColor;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+}

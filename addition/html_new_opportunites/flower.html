@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      position: relative;
+      margin: 100px;
+    }
+
+    .leaf-1 {
+      border-radius: 0 100%;
+      background-color: red;
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 0;
+      left: 0;
+    }
+
+    .leaf-2 {
+      border-radius: 0 100%;
+      background-color: orange;
+      position: absolute;
+      rotate: 45deg;
+      width: 50%;
+      height: 50%;
+      top: -20px;
+      right: 50px;
+    }
+
+    .leaf-3 {
+      border-radius: 0 100%;
+      background-color: yellow;
+      position: absolute;
+      rotate: 90deg;
+      width: 50%;
+      height: 50%;
+      top: 0;
+      right: 0;
+    }
+
+    .leaf-4 {
+      border-radius: 0 100%;
+      background-color: green;
+      position: absolute;
+      rotate: 135deg;
+      width: 50%;
+      height: 50%;
+      top: 50px;
+      right: -20px;
+    }
+
+    .leaf-5 {
+      border-radius: 0 100%;
+      background-color: lightblue;
+      position: absolute;
+      rotate: 0deg;
+      width: 50%;
+      height: 50%;
+      bottom: 0;
+      right: 0;
+    }
+
+    .leaf-6 {
+      border-radius: 0 100%;
+      background-color: blue;
+      position: absolute;
+      rotate: 45deg;
+      width: 50%;
+      height: 50%;
+      bottom: -20px;
+      right: 50px;
+    }
+
+    .leaf-7 {
+      border-radius: 0 100%;
+      background-color: violet;
+      position: absolute;
+      rotate: 90deg;
+      width: 50%;
+      height: 50%;
+      bottom: 0;
+      left: 0;
+    }
+
+    .leaf-8 {
+      border-radius: 0 100%;
+      background-color: grey;
+      position: absolute;
+      rotate: 135deg;
+      width: 50%;
+      height: 50%;
+      top: 50px;
+      left: -20px;
+    }
+
+    .center {
+      border-radius: 50%;
+      background-color: yellow;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 0.5px solid #000;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 10;
+    }
+
+    div[class^='leaf-'] {
+      border: 0.5px solid #000;
+      transform: skew(0px);
+      transition: transform 1s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    .leaf__text {
+      color: white;
+      font-family: 'Lato',sans-serif;
+      -webkit-text-stroke: 0.1px;
+      -webkit-text-stroke-width: 0.3px;
+      -webkit-text-stroke-color: black;
+    }
+
+    #check {
+      position: absolute;
+      left: -999999px;
+      visibility: hidden;
+    }
+
+    #check:checked~div[class^='leaf-'] {
+      /* width: 0;
+      height: 0;
+      border: 0px solid #000; */
+      /* background-color: wheat; */
+      transform: scale(0);
+    }
+  </style>
+
+  <title>Shapes</title>
+</head>
+
+<body>
+  <div class="box">
+    <input type="checkbox" name="check" id="check" style="z-index: 200;">
+    <label class="center" for="check"></label>
+    <div class="leaf-1"><p class="leaf__text">1</p></div>
+    <div class="leaf-2"><p class="leaf__text">2</p></div>
+    <div class="leaf-3"><p class="leaf__text">3</p></div>
+    <div class="leaf-4"><p class="leaf__text">4</p></div>
+    <div class="leaf-5"><p class="leaf__text">5</p></div>
+    <div class="leaf-6"><p class="leaf__text">6</p></div>
+    <div class="leaf-7"><p class="leaf__text">7</p></div>
+    <div class="leaf-8"><p class="leaf__text">8</p></div>
+  </div>
+
+  </div>
+
+
+</body>
+
+</html>

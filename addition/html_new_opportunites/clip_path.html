@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clip path</title>
+  <style>
+    .item {
+      height: 400px;
+      background-color: #ccc;
+    }
+
+    .item1 {
+      clip-path: circle(150px at 10% 200px);
+      background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-crystal-blue-ocean-waves_181624-48854.jpg?t=st=1708688215~exp=1708691815~hmac=374a73fb820c54fdc483aa2e17aabefc6166c3fd8c668226d0be429dc0ae18ba&w=1480);
+      background-size: cover;
+    }
+
+    .item2 {
+      clip-path: ellipse(130px 140px at 10% 0);
+      background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-crystal-blue-ocean-waves_181624-48854.jpg?t=st=1708688215~exp=1708691815~hmac=374a73fb820c54fdc483aa2e17aabefc6166c3fd8c668226d0be429dc0ae18ba&w=1480);
+      background-size: cover;
+    }
+
+    .item3 {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-crystal-blue-ocean-waves_181624-48854.jpg?t=st=1708688215~exp=1708691815~hmac=374a73fb820c54fdc483aa2e17aabefc6166c3fd8c668226d0be429dc0ae18ba&w=1480);
+      background-size: cover;
+    }
+
+    .item4 {
+      clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+      background-image: url(https://img.freepik.com/free-photo/mesmerizing-shot-crystal-blue-ocean-waves_181624-48854.jpg?t=st=1708688215~exp=1708691815~hmac=374a73fb820c54fdc483aa2e17aabefc6166c3fd8c668226d0be429dc0ae18ba&w=1480);
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item item1"></div>
+  <div class="item item2"></div>
+  <div class="item item3"></div>
+  <div class="item item4"></div>
+</body>
+
+</html>

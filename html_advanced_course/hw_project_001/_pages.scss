@@ -1,0 +1,41 @@
+.pages {
+  @include flex;
+  background-color: $lightBackColor;
+  padding-top: 48px;
+  padding-bottom: 96px;
+
+  &__box {
+    @include flex (center, row, center);
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 3px;
+    padding: 12px 15px;
+    gap: 18px;
+  }
+
+  img[class^="pages__box__img__"] {
+    width: 8px;
+    height: 14px;
+  }
+
+  .pages__box__img__next {
+    transform: rotate(180deg);
+  }
+
+  &__link,
+  span {
+    color: rgb(196, 196, 196);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 0;
+
+    &__box {
+      @include flex;
+      gap: 10px;
+    }
+  }
+
+  &__link:hover {
+    color: rgb(239, 91, 112);
+  }
+}

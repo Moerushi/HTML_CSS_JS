@@ -1,0 +1,213 @@
+/* media part
+
+@media (max-width: 768px) {
+
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+
+  .products_box {
+    gap: 16px;
+  }
+
+  .offer {
+    gap: 20px;
+  }
+
+  .offer_top {
+    gap: 20px;
+  }
+
+  .offer_top_card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 231px;
+    min-height: 167px;
+    background-size: cover;
+  }
+
+  .offer_bottom_card {
+    min-width: 734px;
+    min-height: 116px;
+  }
+
+  .brand_box_title {
+    margin-top: 138px;
+    margin-bottom: 138px;
+    margin-left: 39px;
+  }
+
+  .brand_box_vertical_line {
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    background-color: #F16D7F;
+  }
+
+  .brand_box_heading_h1 {
+    color: #222;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .brand_box_heading_text {
+    color: #222;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .brand_box_heading_text:nth-child(2n-1) {
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .feature_items {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .feature {
+    display: flex;
+    padding-top: 48.16px;
+    padding-bottom: 64px;
+  }
+
+  .subscribe {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    justify-content: start;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .header_account,
+  .header_cart,
+  .brand_box_left {
+    display: none;
+  }
+
+  .header,
+  .offer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .offer_top {
+    flex-wrap: wrap;
+  }
+
+  .offer_top_card {
+    min-width: 100%;
+    min-height: 267px;
+  }
+
+  .offer_bottom_card {
+    min-width: 100%;
+    min-height: 116px;
+  }
+
+  .brand_box_right {
+    width: 100%;
+  }
+
+  .brand_box_vertical_line {
+    width: 12px;
+    height: 61px;
+  }
+
+  .brand_box_title {
+    margin-top: 148px;
+    margin-bottom: 149px;
+    margin-left: 56px;
+    margin-right: 56px;
+  }
+
+  .brand_box_heading_h1 {
+    color: #222;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .brand_box_heading_text {
+    color: #222;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .brand_box_heading_text:nth-child(2n-1) {
+    color: #F16D7F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .subscribe {
+    padding-top: 54.05px;
+    padding-bottom: 109.92px;
+    gap: 59px;
+  }
+
+  .subscribe_quote_text {
+    font-size: 18px;
+  }
+
+  .subscribe_input {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscribe_input_text {
+    font-size: 14px;
+  }
+
+  .subscribe_input_form {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 341px;
+  }
+
+  .subscribe_input_email {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    left: 0;
+    padding-left: 21.07px;
+    height: 46.94px;
+    z-index: 2;
+  }
+
+  .subscribe_input_buttom {
+    width: 95.79px;
+    height: 46.94px;
+    z-index: 5;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    padding-top: 43px;
+    gap: 40px;
+  }
+
+}
+
+*/

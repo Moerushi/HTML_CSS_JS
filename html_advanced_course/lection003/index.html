@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML ADVANCED LECTION 1</title>
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="box-content">
+    <header class="header center">
+      <div class="header__left">
+        <a href="index.html" class="logo"><img src="./img/header_logo.svg" alt="logo"></a>
+        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18.0589 17.6251C19.6705 15.865 20.6275 13.6039 20.769 11.2216C20.9106 8.83932 20.2281 6.48088 18.8362 4.54232C17.4443 2.60377 15.4278 1.20318 13.1252 0.575765C10.8227 -0.0516554 8.37437 0.132305 6.19143 1.09675C4.0085 2.0612 2.22389 3.74739 1.1373 5.87217C0.0507149 7.99695 -0.271678 10.4309 0.224264 12.7653C0.720206 15.0997 2.00428 17.1923 3.86085 18.6919C5.71741 20.1914 8.0334 21.0064 10.4199 21.0001C12.6723 21.0031 14.8638 20.2691 16.6599 18.9101L24.4079 26.7171C24.4934 26.8061 24.5958 26.8772 24.7091 26.9261C24.8225 26.9751 24.9444 27.0009 25.0679 27.0021C25.1916 27.0024 25.314 26.9773 25.4276 26.9283C25.5411 26.8793 25.6434 26.8074 25.7279 26.7171C25.9018 26.5362 25.999 26.295 25.999 26.0441C25.999 25.7931 25.9018 25.5519 25.7279 25.371L18.0589 17.6251ZM1.88589 10.5001C1.89873 8.81477 2.41021 7.17101 3.35586 5.776C4.30151 4.38098 5.63899 3.29715 7.1997 2.66114C8.76042 2.02513 10.4745 1.86542 12.1258 2.20213C13.7772 2.53884 15.2919 3.3569 16.479 4.55319C17.6661 5.74948 18.4725 7.27044 18.7965 8.92433C19.1204 10.5782 18.9475 12.291 18.2995 13.8468C17.6515 15.4026 16.5574 16.7316 15.1551 17.6665C13.7529 18.6014 12.1052 19.1002 10.4199 19.1C8.14843 19.0892 5.97409 18.1775 4.3741 16.5652C2.77412 14.9528 1.87924 12.7715 1.88589 10.5001Z"
+            fill="#E8E8E8" />
+        </svg>
+  
+      </div>
+      <div class="header__right">
+          <label for="burger"><img src="./img/header_sandwich.svg" alt="burger-menu"></label>
+          <input type="checkbox" id="burger">
+          <nav class="nav">
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+  
+    <div class="top-head center">
+      <h2 class="top-head__heading">NEW ARRIVALS</h2>
+      <nav class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">HOME</a>
+        <a href="#" class="breadcrumbs__link">MEN</a>
+        <a href="#" class="breadcrumbs__link breadcrumbs__link__site">NEW ARRIVALS</a>
+      </nav>
+  
+  
+    </div>
+  
+    <div class="filter-sort center">
+      <details class="filter">
+        <summary class="filter__summary">
+          <span class="filter__heading">FILTER</span>
+          <svg width="15.000000" height="10.000000" viewBox="0 0 15 10" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="filter"
+              d="M0.833252 10L4.16675 10C4.625 10 5 9.625 5 9.16675C5 8.70825 4.625 8.33325 4.16675 8.33325L0.833252 8.33325C0.375 8.33325 0 8.70825 0 9.16675C0 9.625 0.375 10 0.833252 10ZM0 0.833252C0 1.29175 0.375 1.66675 0.833252 1.66675L14.1667 1.66675C14.625 1.66675 15 1.29175 15 0.833252C15 0.375 14.625 0 14.1667 0L0.833252 0C0.375 0 0 0.375 0 0.833252ZM0.833252 5.83325L9.16675 5.83325C9.625 5.83325 10 5.45825 10 5C10 4.54175 9.625 4.16675 9.16675 4.16675L0.833252 4.16675C0.375 4.16675 0 4.54175 0 5C0 5.45825 0.375 5.83325 0.833252 5.83325Z" />
+          </svg>
+        </summary>
+        <div class="filter__content">
+          <details class="filter__item" open>
+            <summary class="filter__head">CATEGORY</summary>
+            <div class="filter__link-box">
+              <a href="#" class="filter__link">Accessories</a>
+              <a href="#" class="filter__link">Bags</a>
+              <a href="#" class="filter__link">Denim</a>
+              <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+              <a href="#" class="filter__link">Jackets & Coats</a>
+              <a href="#" class="filter__link">Polos</a>
+              <a href="#" class="filter__link">Shirts</a>
+              <a href="#" class="filter__link">Shoes</a>
+              <a href="#" class="filter__link">Sweaters & Knits</a>
+              <a href="#" class="filter__link">T-Shirts</a>
+              <a href="#" class="filter__link">Tanks</a>
+            </div>
+          </details>
+          <details class="filter__item">
+            <summary class="filter__head">BRAND</summary>
+            <div class="filter__link-box">
+              <a href="#" class="filter__link">Accessories</a>
+              <a href="#" class="filter__link">Bags</a>
+              <a href="#" class="filter__link">Denim</a>
+              <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+              <a href="#" class="filter__link">Jackets & Coats</a>
+              <a href="#" class="filter__link">Polos</a>
+              <a href="#" class="filter__link">Shirts</a>
+              <a href="#" class="filter__link">Shoes</a>
+              <a href="#" class="filter__link">Sweaters & Knits</a>
+              <a href="#" class="filter__link">T-Shirts</a>
+              <a href="#" class="filter__link">Tanks</a>
+            </div>
+          </details>
+          <details class="filter__item">
+            <summary class="filter__head">DESIGNER</summary>
+            <div class="filter__link-box">
+              <a href="#" class="filter__link">Accessories</a>
+              <a href="#" class="filter__link">Bags</a>
+              <a href="#" class="filter__link">Denim</a>
+              <a href="#" class="filter__link">Hoodies & Sweatshirts</a>
+              <a href="#" class="filter__link">Jackets & Coats</a>
+              <a href="#" class="filter__link">Polos</a>
+              <a href="#" class="filter__link">Shirts</a>
+              <a href="#" class="filter__link">Shoes</a>
+              <a href="#" class="filter__link">Sweaters & Knits</a>
+              <a href="#" class="filter__link">T-Shirts</a>
+              <a href="#" class="filter__link">Tanks</a>
+            </div>
+          </details>
+        </div>
+      </details>
+  
+      <div class="sort">
+        <details class="sort__details">
+          <summary class="sort__summary">
+            <span class="sort__heading">TRENDING NOW</span>
+            <svg width="10.020004" height="5.003906" viewBox="0 0 10.02 5.00391" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path id="Vector" d="M5.00214 5.0022C4.83521 5.00244 4.67342 4.94434 4.54488 4.83789L0.258102 1.26538C0.112198 1.14429 0.0204391 0.969971 0.00302124 0.781006C-0.0143967 0.592041 0.0439529 0.404053 0.165222 0.258057C0.286491 0.112305 0.460762 0.0205078 0.649681 0.00292969C0.838608 -0.0144043 1.02671 0.0439453 1.17262 0.165283L5.00214 3.36597L8.83167 0.279541C8.90475 0.220215 8.98884 0.175781 9.0791 0.14917C9.16937 0.122314 9.26403 0.11377 9.35764 0.123779C9.45126 0.133545 9.54198 0.162109 9.6246 0.207275C9.70722 0.252197 9.78011 0.313232 9.83907 0.386719C9.9045 0.460205 9.95405 0.546387 9.98462 0.639893C10.0152 0.733398 10.0261 0.832275 10.0167 0.930176C10.0073 1.02808 9.97784 1.12305 9.93005 1.20898C9.88226 1.29492 9.81724 1.37012 9.73904 1.42993L5.45226 4.88062C5.32001 4.97046 5.16154 5.01318 5.00214 5.0022Z" fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>   
+          </summary>
+        </details>
+        <details class="sort__details">
+          <summary class="sort__summary">
+            <span class="sort__heading">SIZE</span>
+            <svg width="10.020004" height="5.003906" viewBox="0 0 10.02 5.00391" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path id="Vector" d="M5.00214 5.0022C4.83521 5.00244 4.67342 4.94434 4.54488 4.83789L0.258102 1.26538C0.112198 1.14429 0.0204391 0.969971 0.00302124 0.781006C-0.0143967 0.592041 0.0439529 0.404053 0.165222 0.258057C0.286491 0.112305 0.460762 0.0205078 0.649681 0.00292969C0.838608 -0.0144043 1.02671 0.0439453 1.17262 0.165283L5.00214 3.36597L8.83167 0.279541C8.90475 0.220215 8.98884 0.175781 9.0791 0.14917C9.16937 0.122314 9.26403 0.11377 9.35764 0.123779C9.45126 0.133545 9.54198 0.162109 9.6246 0.207275C9.70722 0.252197 9.78011 0.313232 9.83907 0.386719C9.9045 0.460205 9.95405 0.546387 9.98462 0.639893C10.0152 0.733398 10.0261 0.832275 10.0167 0.930176C10.0073 1.02808 9.97784 1.12305 9.93005 1.20898C9.88226 1.29492 9.81724 1.37012 9.73904 1.42993L5.45226 4.88062C5.32001 4.97046 5.16154 5.01318 5.00214 5.0022Z" fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>   
+          </summary>
+          <div class="sort__box">
+            <div class="sort__check">
+              <input type="checkbox" id="sort__check1">
+              <label for="sort__check1">XS</label>
+            </div>
+            <div class="sort__check">
+              <input type="checkbox" id="sort__check2">
+              <label for="sort__check2">S</label>
+            </div>
+            <div class="sort__check">
+              <input type="checkbox" id="sort__check3">
+              <label for="sort__check3">L</label>
+            </div>
+          </div>
+        </details>
+        <details class="sort__details">
+          <summary class="sort__summary">
+            <span class="sort__heading">PRICE</span>
+            <svg width="10.020004" height="5.003906" viewBox="0 0 10.02 5.00391" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path id="Vector" d="M5.00214 5.0022C4.83521 5.00244 4.67342 4.94434 4.54488 4.83789L0.258102 1.26538C0.112198 1.14429 0.0204391 0.969971 0.00302124 0.781006C-0.0143967 0.592041 0.0439529 0.404053 0.165222 0.258057C0.286491 0.112305 0.460762 0.0205078 0.649681 0.00292969C0.838608 -0.0144043 1.02671 0.0439453 1.17262 0.165283L5.00214 3.36597L8.83167 0.279541C8.90475 0.220215 8.98884 0.175781 9.0791 0.14917C9.16937 0.122314 9.26403 0.11377 9.35764 0.123779C9.45126 0.133545 9.54198 0.162109 9.6246 0.207275C9.70722 0.252197 9.78011 0.313232 9.83907 0.386719C9.9045 0.460205 9.95405 0.546387 9.98462 0.639893C10.0152 0.733398 10.0261 0.832275 10.0167 0.930176C10.0073 1.02808 9.97784 1.12305 9.93005 1.20898C9.88226 1.29492 9.81724 1.37012 9.73904 1.42993L5.45226 4.88062C5.32001 4.97046 5.16154 5.01318 5.00214 5.0022Z" fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>   
+          </summary>
+        </details>
+      </div>
+    </div>
+  
+    <div class="product-box center">
+      <div class="product">
+        <img class="product__img" src="./img/products_one.svg" alt="product">
+        <div class="product__content">
+          <a href="#" class="product__name">ELLERY x M'O CAPSULE</a>
+          <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+            Ellery teams up with Moda Operandi.</p>
+          <p class="product__price">$52.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product__img" src="./img/products_one.svg" alt="product">
+        <div class="product__content">
+          <a href="#" class="product__name">ELLERY x M'O CAPSULE</a>
+          <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+            Ellery teams up with Moda Operandi.</p>
+          <p class="product__price">$52.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product__img" src="./img/products_one.svg" alt="product">
+        <div class="product__content">
+          <a href="#" class="product__name">ELLERY x M'O CAPSULE</a>
+          <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+            Ellery teams up with Moda Operandi.</p>
+          <p class="product__price">$52.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+</body>
+
+</html>
