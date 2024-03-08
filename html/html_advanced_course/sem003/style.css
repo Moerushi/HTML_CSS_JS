@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  font-family: "Madimi One";
+}
+
+.text {
+  font-family: "Bebas Neue";
+}
+
+.letter-borders {
+  color: white;
+  font-size: 60px;
+  -webkit-text-stroke: 1px rgb(0, 183, 255);
+}
+
+.triangle {
+  margin: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 100px 0 100px;
+  border-color: blue transparent transparent transparent;
+  transform: rotate(100deg);
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 210px;
+  height: 210px;
+  background: linear-gradient(33deg, rgb(255, 0, 0) 0%, rgb(255, 94, 0) 50%, rgb(255, 234, 0) 100%);
+}
+
+.photo-frame {
+  border-radius: 10px;
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+}
+
+.image-frame {
+  width: 200px;
+  height: 200px;
+  border-image-slice: 90% 21% 91% 19%;
+  border-image-width: 1.5em 1.5em 1.5em 1.5em;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-image-source: url("https://img.freepik.com/free-vector/star-glossy-yellow-colors-3d-cute-smooth-star-shape-realistic-vector-illustration-isolated-on-a-white-background_145391-1342.jpg");
+  border-style: solid;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.toggle {
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(228, 84, 76);
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 5px black;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  transition: background-color 1s;
+}
+
+#check {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+
+#check:checked ~ .toggle {
+  background-color: rgb(99, 205, 106);
+}
+#check:checked ~ .toggle .switch {
+  transform: translateX(100px) rotate(360deg);
+}
+#check:checked ~ .toggle .switch::after {
+  top: 10px;
+  left: 34px;
+  border-radius: 6px;
+  width: 8px;
+  height: 30px;
+  border: 2px solid rgb(99, 205, 106);
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 26px;
+  border-radius: 50%;
+  border: 2px solid rgb(228, 84, 76);
+  width: 20px;
+  height: 20px;
+  transition: all 1s;
+}
+
+.switch {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px black;
+  transform: translateX(0) rotate(0);
+  transition: transform 1s;
+}/*# sourceMappingURL=style.css.map */

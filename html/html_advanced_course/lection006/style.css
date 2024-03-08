@@ -1,0 +1,124 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -75px;
+    top: 59vh;
+  }
+  50% {
+    left: 43vw;
+    top: 77vh;
+  }
+  100% {
+    left: 100vw;
+    top: 12vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -75px;
+    top: 42vh;
+  }
+  50% {
+    left: 59vw;
+    top: 67vh;
+  }
+  100% {
+    left: 100vw;
+    top: 72vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -75px;
+    top: 57vh;
+  }
+  50% {
+    left: 33vw;
+    top: 59vh;
+  }
+  100% {
+    left: 100vw;
+    top: 78vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -75px;
+    top: 22vh;
+  }
+  50% {
+    left: 43vw;
+    top: 46vh;
+  }
+  100% {
+    left: 100vw;
+    top: 41vh;
+  }
+}
+@keyframes duck-fly-5 {
+  0% {
+    left: -75px;
+    top: 75vh;
+  }
+  50% {
+    left: 10vw;
+    top: 73vh;
+  }
+  100% {
+    left: 100vw;
+    top: 5vh;
+  }
+}
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  counter-reset: count;
+  height: 100vh;
+  background-image: url(https://vistapointe.net/images/duck-hunt-wallpaper-8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.duck-check {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counter-info {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.counter-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 75px;
+}
+.duck_1 {
+  animation: duck-fly-1 6s ease-in 2s both;
+}
+.duck_2 {
+  animation: duck-fly-2 6s ease-in 4s both;
+}
+.duck_3 {
+  animation: duck-fly-3 6s ease-in 6s both;
+}
+.duck_4 {
+  animation: duck-fly-4 6s ease-in 8s both;
+}
+.duck_5 {
+  animation: duck-fly-5 6s ease-in 10s both;
+}/*# sourceMappingURL=style.css.map */
