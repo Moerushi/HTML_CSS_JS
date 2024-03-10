@@ -107,20 +107,6 @@
       line-height: 16px;
       text-align: left;
     }
-
-    &__input {
-      appearance: none;
-      border-radius: 50%;
-      width: 16px;
-      height: 16px;
-      border: 2px solid #999;
-      transition: 0.2s all linear;
-
-      &:checked {
-        border: 5px solid $highlightedSiteColor;
-      }
-    }
-
   }
 
   &__addtocart {

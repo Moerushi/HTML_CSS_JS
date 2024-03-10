@@ -1,0 +1,99 @@
+%same-font {
+  color: $darkBackColor;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.registration {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  &__forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 33px;
+
+    &__heading {
+      color: rgb(34, 34, 34);
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    &__text {
+      color: rgb(177, 177, 177);
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+
+  &__part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 360px;
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+  }
+
+  &_option-input {
+    margin-right: 10px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &__sex {
+    color: $darkBackColor;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  &__heading, &__text {
+    @extend %same-font;
+    margin-bottom: 22px;
+  }
+
+  &__item {
+    @extend %same-font;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    &::before {
+      content: url(./img/perks_item.svg);
+      padding-right: 23px;
+    }
+  }
+
+  &__button {
+    background-color: $highlightedSiteColor;
+    border: 1px solid $highlightedSiteColor;
+    color: $lightBackColor;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 17px 29px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightBackColor;
+      border: 1px solid $highlightedSiteColor;
+      color: $highlightedSiteColor;
+    }
+  }
+
+}

@@ -1,21 +1,23 @@
-@import 'vars';
-@import 'mixins';
+@import './sass_files/vars';
+@import './sass_files/mixins';
 
-@import 'start-positioning';
+@import './sass_files/start-positioning';
 
-@import 'header';
-@import 'breadcrumbs';
-@import 'brand';
-@import 'carousel';
-@import 'sort-box';
-@import 'offer';
-@import 'product-description';
-@import 'products';
-@import 'feature';
-@import 'subscribe';
-@import 'pages';
-@import 'footer';
+@import './sass_files/header';
+@import './sass_files/breadcrumbs';
+@import './sass_files/brand';
+@import './sass_files/carousel';
+@import './sass_files/sort-box';
+@import './sass_files/offer';
+@import './sass_files/product-description';
+@import './sass_files/products';
+@import './sass_files/feature';
+@import './sass_files/subscribe';
+@import './sass_files/pages';
+@import './sass_files/footer';
 
-@import 'cart';
+@import './sass_files/cart';
+@import './sass_files/registration';
 
-@import 'media';
+@import './sass_files/media';
+@import './sass_files/basic-forms';
