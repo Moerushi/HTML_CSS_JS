@@ -1,0 +1,100 @@
+@keyframes lamp-rise-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes lamp-rise-2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes lamp-rise-3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://kartinki.pics/pics/uploads/posts/2022-09/1662260741_1-kartinkin-net-p-nochnoi-vid-rossii-iz-kosmosa-kosmos-1.jpg) no-repeat center;
+  width: 100vw;
+  height: 100vh;
+  counter-reset: count;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+input[type=checkbox]:checked {
+  counter-increment: count;
+}
+
+.bulb {
+  position: absolute;
+}
+.bulb_1 {
+  top: 57vh;
+  left: 45vw;
+  animation: lamp-rise-1 5s 2s both;
+}
+.bulb_2 {
+  top: 64vh;
+  left: 15vw;
+  animation: lamp-rise-2 5s 4s both;
+}
+.bulb_3 {
+  top: 13vh;
+  left: 63vw;
+  animation: lamp-rise-3 5s 6s both;
+}
+
+svg {
+  width: 50px;
+  fill: yellow;
+}
+
+.counter {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.counter::before {
+  content: counter(count);
+}/*# sourceMappingURL=style.css.map */

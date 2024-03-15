@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 200px;
+  height: 30px;
+  background-color: greenyellow;
+}
+
+.content:has(.text) {
+  background-color: yellow;
+}
+
+.div-content:nth-of-type(3n) {
+  background-color: red;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 300;
+  width: 300px;
+}
+
+.paragraph::first-letter {
+  initial-letter: 3 3;
+  color: red;
+  margin-right: 10px;
+}
+
+.title {
+  color: red;
+  font-size:48px;
+}
+
+// @scope (.subtitle){
+//   .title {
+//     color:green;
+//   }
+// }
+
+@media (width < 768px) {
+.heading{
+  color: blue;
+}
+}
+
+@media (width >= 1024px) {
+  .heading{
+    color: orange;
+  }
+  }
