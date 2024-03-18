@@ -16,6 +16,7 @@
 
     &__cards {
       display: flex;
+      align-items: center;
       flex-direction: column;
       gap: 40px;
     }
@@ -25,12 +26,12 @@
       justify-content: start;
       flex-direction: row;
       align-items: start;
-      flex-wrap: wrap;
       align-content: center;
       flex-wrap: nowrap;
       border: 1px solid rgb(234, 234, 234);
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
       position: relative;
+      max-width: 652px;
     }
 
     &__cross {
