@@ -1,11 +1,21 @@
 .product-description__box {
-  @include flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   position: relative;
   height: 664px;
 }
 
 .product-description {
-  @include flex (center, column, center);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   position: absolute;
   top: -64px;
   width: 100%;
@@ -67,18 +77,33 @@
   }
 
   &__product-options {
-    @include flex (center, row, center);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     margin-bottom: 49px;
     gap: 23px;
 
     &__item {
-      @include flex (center, row, center);
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
       gap: 9px;
       position: relative;
     }
 
     &__summary {
-      @include flex (center, row, center);
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
       gap: 9px;
     }
 
@@ -88,7 +113,11 @@
     }
 
     &__choise {
-      @include flex (center, column, left);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
       position: absolute;
       margin: 5px;
       padding: 9px 30px 9px 9px;
@@ -99,7 +128,12 @@
     }
 
     &__label {
-      @include flex (start, row, center);
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
       gap: 9px;
       color: rgb(111, 110, 110);
       font-size: 14px;
@@ -110,7 +144,12 @@
   }
 
   &__addtocart {
-    @include flex (center, row, center);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     border: 1px solid $highlightedSiteColor;
     background-color: $lightBackColor;
     padding: 15px 24px;

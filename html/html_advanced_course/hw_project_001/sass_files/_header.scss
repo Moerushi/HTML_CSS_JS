@@ -1,17 +1,30 @@
 .header {
-  @include flex (space-between, row, center);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   background: $darkBackColor;
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
 
   &__left {
-    @include flex (_, _, center);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 41px;
   }
 
   &__right {
-    @include flex (center, row, center);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 33px;
 
     &__button {

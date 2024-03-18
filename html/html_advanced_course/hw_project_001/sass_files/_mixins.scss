@@ -23,24 +23,14 @@
   }
 }
 
-@mixin flex ($justify: center, $direction: row, $align: center) {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: $align;
-  justify-content: $justify;
-  flex-direction: $direction;
-  align-content: center;
-
-}
-
 @mixin for-absolute-zero ($side) {
-  @if $side ==left {
+  @if $side == left {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  @else if $side ==right {
+  @else if $side == right {
     position: absolute;
     top: 0;
     right: 0;

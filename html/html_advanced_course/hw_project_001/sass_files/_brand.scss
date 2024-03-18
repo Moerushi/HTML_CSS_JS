@@ -1,6 +1,12 @@
 .brand {
+
   position: relative;
-  @include flex (_, row, _);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   background-color: #F1E4E6;
 
   &__left {
@@ -19,7 +25,11 @@
   }
 
   &__title {
-    @include flex (left, row, start);
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: start;
+    align-content: center;
     gap: 16px;
     margin-top: 289.9px;
     margin-bottom: 382.1px;
@@ -51,10 +61,6 @@
 
   &__heading-text:nth-child(2n-1) {
     color: $highlightedSiteColor;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
   }
 
 }

@@ -136,7 +136,12 @@
   }
 
   &__heading {
-    @include flex (center, row, center);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 10px;
     color: rgb(111, 110, 110);
     font-size: 14px;

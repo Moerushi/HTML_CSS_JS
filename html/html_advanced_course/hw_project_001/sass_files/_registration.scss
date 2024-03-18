@@ -31,7 +31,7 @@
 
     &__text {
       color: rgb(177, 177, 177);
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 300;
     }
   }
@@ -58,7 +58,7 @@
 
   &__sex {
     color: $darkBackColor;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 300;
     text-align: left;
   }
@@ -68,16 +68,16 @@
     margin-bottom: 22px;
   }
 
-  &__item {
-    @extend %same-font;
-    margin-bottom: 16px;
+  &__list {
+    padding-left: 30px;
   }
 
   &__item {
-    &::before {
-      content: url(./img/perks_item.svg);
-      padding-right: 23px;
-    }
+    @extend %same-font;
+    margin-bottom: 16px;
+    list-style: url(./img/perks_item.svg);
+    list-style-position: outside;
+    padding-left: 8px;
   }
 
   &__button {

@@ -1,20 +1,29 @@
 .offer {
-  @include flex (_, column, _);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   flex-wrap: nowrap;
   margin-top: 65px;
   margin-bottom: 96px;
   gap: 30px;
 
   &__top {
-    @include flex (center, row, center);
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
     flex-wrap: nowrap;
     gap: 30px;
   }
 
   &__top-card {
     position: relative;
-    @include flex (center, _, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     box-sizing: content-box;
     width: 100%;
     min-height: 260px;
@@ -22,12 +31,20 @@
   }
 
   &__bottom {
-    @include flex (center, _, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
   }
 
   &__bottom-card {
     position: relative;
-    @include flex (center, _, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     min-width: 100%;
     min-height: 180px;
     background-size: cover;
