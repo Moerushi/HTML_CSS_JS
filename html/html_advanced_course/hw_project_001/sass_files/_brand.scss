@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
   align-content: center;
   background-color: #F1E4E6;
 
@@ -16,19 +14,22 @@
 
   &__image {
     @include for-absolute-zero (right);
+    min-width: 50%;
     height: 100%;
   }
 
   &__right {
+    display: flex;
+    justify-content: center;
     position: relative;
-    width: 50%;
+    min-width: 50%;
   }
 
   &__title {
     display: flex;
     justify-content: left;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     align-content: center;
     gap: 16px;
     margin-top: 289.9px;

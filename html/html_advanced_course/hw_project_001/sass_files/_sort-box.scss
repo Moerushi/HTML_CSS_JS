@@ -27,7 +27,7 @@
     padding-bottom: 16px;
   }
 
-  &[open] .filter__heading {
+  &[open] .filter__heading:before {
     color: $highlightedSiteColor;
   }
 
@@ -42,7 +42,8 @@
     padding-left: 16px;
   }
 
-  &__heading {
+  &__heading::before {
+    content: 'FILTER';
     color: $darkBackColor;
     font-size: 14px;
     font-weight: 600;
