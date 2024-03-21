@@ -24,3 +24,9 @@
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
+
+const userInteger = +prompt('Введите целое число: ');
+const hundreds = Math.trunc(userInteger % 1000 / 100);
+const dozens = Math.trunc(userInteger % 100 / 10);
+const pieces = Math.trunc(userInteger % 10);
+console.log(`В числе ${userInteger} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${pieces}.`);
