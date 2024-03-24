@@ -7,6 +7,6 @@
 */
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
-let userName = 'Nick';
-let admin = userName;
+const userName = 'Nick';
+const admin = userName;
 console.log(admin);

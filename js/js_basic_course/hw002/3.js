@@ -16,7 +16,7 @@
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
 
-let dayNumber = Number(prompt('Введите число от 1 до 32 (исключая число 32): '));
+const dayNumber = Number.isInteger(prompt('Введите число от 1 до 32 (исключая число 32): '));
 if (dayNumber >= 32 || dayNumber < 1) {
   console.log('Неверное значение');
 } else {

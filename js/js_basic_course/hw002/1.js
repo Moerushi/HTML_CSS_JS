@@ -15,8 +15,8 @@
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
 
-let positive = Number(prompt('Введите положительное число: '));
-let negative = Number(prompt('Введите отрицательное число: '));
+const positive = Number(prompt('Введите положительное число: '));
+const negative = Number(prompt('Введите отрицательное число: '));
 
 if (positive > 0 && negative < 0) {
   console.log('Все значения верные.');
