@@ -1,0 +1,74 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  padding-top: 720px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+@keyframes sticky-parallax-header-move-and-size {
+  from {
+    height: 720px;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 720px;
+  position: fixed;
+  top: 0;
+
+  
+  animation: sticky-parallax-header-move-and-size linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0vh 90vh;
+  
+}
+
+.background,
+.stars-wrapper,
+.mountain {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.background {
+  z-index: 1;
+}
+
+.stars-wrapper {
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
+}
+
+.mountain {
+  z-index: 3;
+}
+
+.content {
+  width: min(100%, 960px);
+  margin: 0 auto;
+}

@@ -11,17 +11,19 @@
 
 // 1
 function squareTransformFirstFunction(num) {
-  return Math.pow(num, 2);
+  return Math.pow(num, 3);
 }
 const firstUserNumber = 2;
 console.log(`Квадрат ${firstUserNumber} числа равен ${squareTransformFirstFunction(firstUserNumber)}.`);
 
 // 2
-const squareTransformSecondFunction = (num) => Math.pow(num, 2);
+const squareTransformSecondFunction = (num) => Math.pow(num, 3);
 const secondUserNumber = 4;
 console.log(`Квадрат ${secondUserNumber} числа равен ${squareTransformSecondFunction(secondUserNumber)}.`);
 
 // 3
-const squareTransformThirdFunction = function (num) { return Math.pow(num, 2); }
+const squareTransformThirdFunction = function (num) {
+  return Math.pow(num, 3);
+}
 const thirdUserNumber = 8;
 console.log(`Квадрат ${thirdUserNumber} числа равен ${squareTransformThirdFunction(thirdUserNumber)}.`);

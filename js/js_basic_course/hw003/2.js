@@ -12,8 +12,8 @@
 // Здесь пишем решение, данный комментарий необходимо стереть.
 const salary = (number) => number * 0.87;
 const userNumber = Number(prompt('Введите целое число: '));
-if (Number.isInteger(userNumber)) {
-  console.log(`Размер заработной платы за вычетом налогов равен ${salary(userNumber)}.`);
+if (Number.isFinite(userNumber)) {
+  console.log(`Размер заработной платы за вычетом налогов равен ${Math.round(salary(userNumber))}.`);
 } else {
   console.log('Значение задано неверно');
 }

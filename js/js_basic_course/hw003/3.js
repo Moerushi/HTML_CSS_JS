@@ -12,6 +12,7 @@
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
 function findMaxNumber(firstNum, secondNum, thirdNum) {
+  //  return Math.max(firstNum, secondNum, thirdNum);
   let max = firstNum;
   if (secondNum > max) {
     max = secondNum;
