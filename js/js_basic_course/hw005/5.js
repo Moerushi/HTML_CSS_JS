@@ -18,12 +18,12 @@ const ru = [
 ];
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
-// let dictionary = {};
+// const dictionary = {};
 // for (let i = 0; i < en.length; i++) {
 //   dictionary[en[i]] = ru[i];
 // }
 // console.log(dictionary);
 
-let dict = {};
-en.forEach((item) => dict[en[en.indexOf(item)]] = ru[en.indexOf(item)]);
+const dict = {};
+en.forEach((item, i) => dict[en[i]] = ru[i]);
 console.log(dict);

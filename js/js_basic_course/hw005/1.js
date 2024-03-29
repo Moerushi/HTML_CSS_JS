@@ -17,7 +17,7 @@ const numbers = {
 
 // Здесь пишем решение, данный комментарий необходимо стереть.
 
-for (let item in numbers) {
+for (const item in numbers) {
   if (numbers[item] >= 3) {
     console.log(numbers[item]);
   }

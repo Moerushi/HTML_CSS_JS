@@ -11,13 +11,16 @@ let simpleInput = document.querySelector('.input_simple');
 simpleButton.classList.add('newclass'); // добавляет класс
 simpleButton.classList.remove('newclass'); // удаляет класс
 
+
 simpleButton.onclick = function() {
   simpleButton.classList.toggle('button_simple_new');  //переключает классы
   console.log(`Ваш текст: ${simpleInput.value}`);
   if (simpleButton.textContent === 'Not simple') {
     simpleButton.textContent = 'Simple'; // добавляет и изменяет содержимое в теге
+    simpleButton.style.minWidth = '200px';
   } else {
     simpleButton.textContent = 'Not simple'; // добавляет и изменяет содержимое в теге
+    simpleButton.style.minWidth = '400px';
   }  
 }
 
