@@ -101,3 +101,14 @@ var LengthList = class LengthList extends List {
 }
 
 console.log(LengthList.fromArray([1, 2, 3]).length);
+
+// Object. prototype
+// Object.getPrototypeOf({})
+// Array. prototype
+//Function.prototype
+// Object. create.
+//Object. prototype. toString
+//call
+//.hasOwnPropertу 
+//Symbol.iterator
+//extends // super
