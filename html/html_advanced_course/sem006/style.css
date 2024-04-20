@@ -68,18 +68,18 @@ input[type=checkbox]:checked {
   position: absolute;
 }
 .bulb_1 {
-  top: 3vh;
-  left: 26vw;
+  top: 59vh;
+  left: 85vw;
   animation: lamp-rise-1 5s 2s both;
 }
 .bulb_2 {
-  top: 86vh;
-  left: 88vw;
+  top: 41vh;
+  left: 63vw;
   animation: lamp-rise-2 5s 4s both;
 }
 .bulb_3 {
-  top: 27vh;
-  left: 5vw;
+  top: 20vh;
+  left: 32vw;
   animation: lamp-rise-3 5s 6s both;
 }
 

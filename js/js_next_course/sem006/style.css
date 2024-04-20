@@ -1,0 +1,103 @@
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shopping-cart__left {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.shopping-cart__left__cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.shopping-cart__left__item {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: start;
+  align-content: center;
+  flex-wrap: nowrap;
+  border: 1px solid rgb(234, 234, 234);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  max-width: 652px;
+  box-sizing: border-box;
+}
+.shopping-cart__left__cross {
+  position: absolute;
+  right: 22px;
+  top: 28px;
+}
+.shopping-cart__left__cross:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}
+.shopping-cart__left__img {
+  height: 306px;
+}
+.shopping-cart__left__textbox {
+  padding: 22px 97px 62px 31px;
+}
+.shopping-cart__left__heading {
+  color: rgb(34, 34, 34);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 42px;
+  word-break: keep-all;
+}
+.shopping-cart__left__description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.shopping-cart__left__text {
+  color: rgb(87, 87, 87);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.shopping-cart__left__text_color, .shopping-cart__left__text_size {
+  color: rgb(111, 110, 110);
+}
+.shopping-cart__left__text_highlight {
+  color: #F16D7F;
+}
+.shopping-cart__left__text_border {
+  border: 1px solid rgb(234, 234, 234);
+  padding: 1px 16px;
+}
+.shopping-cart__left__buttoms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shopping-cart__left__buttom {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 300;
+  background-color: white;
+  border: 1px solid rgb(164, 164, 164);
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  min-width: 235px;
+  min-height: 50px;
+}
+.shopping-cart__left__buttom:hover {
+  color: white;
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+}/*# sourceMappingURL=style.css.map */
