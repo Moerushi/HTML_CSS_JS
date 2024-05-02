@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:50px auto;
+  width: 400px;
+}
+
+.video-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px;
+  border: 8px solid rgb(20, 29, 13);;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shadowed {
+  opacity: 0.5;
+}
+
+.play {
+  position: absolute;
+  background-image: url('./img/play.svg');
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.pause {
+  position: absolute;
+  background-image: url('./img/pause.svg');
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.repeat {
+  position: absolute;
+  background-image: url('./img/repeat.svg');
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  left: -999999px;
+  top: 0;
+}
+
+.control-elems {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(150, 167, 82);
+  border-radius: 20px;
+  width: 100%;
+  margin: 10px;
+}
+
+.volume-box {
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(150, 167, 82);
+  border-radius: 20px;
+  width: 80px;
+  margin: 10px;
+  top: -60px;
+  left: -10px;
+}
+
+.volume-icon {
+  position: absolute;
+  background-image: url('./img/volume.svg');
+  width: 30px;
+  height: 30px;
+  top: -90px;
+}
+
+.volume-down {
+  position: absolute;
+  background-image: url('./img/volume-down.svg');
+  width: 30px;
+  height: 30px;
+  top: -90px;
+}
+
+.volume-mute {
+  position: absolute;
+  background-image: url('./img/volume-mute.svg');
+  width: 30px;
+  height: 30px;
+  top: -90px;
+}
