@@ -1,6 +1,27 @@
 // 2. "Отправка данных на сервер"
 // Реализуйте функцию saveUserData, которая принимает объект с данными о пользователе в качестве аргумента и использует fetch для отправки этих данных на удаленный сервер для сохранения. Функция должна возвращать промис, который разрешается, если данные успешно отправлены, или отклоняется в случае ошибки.
 
+function saveUserData(userData) {
+    const userUrl = 'https://server.com/saveUserData';
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(userData)
+    };
+
+    return fetch(userUrl, options)
+        .then((response) => {
+            if (response.ok) {
+                return new Promise.resolve();
+            } else {
+                return new Promise.reject(new Error('Не удалось сохранить пользователя'));
+            }
+        })
+        .catch((error) => Promise.reject(new Error('Ошибка соединения')));
+}
+
 // Пример использования функции
 const user = {
     name: 'John Smith',
