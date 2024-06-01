@@ -1,5 +1,3 @@
-const nasaUrl = 'https://api.nasa.gov/planetary/apod?api_key=xurCHRuqhCdxIWpWlbZwB4veOjfsQnrUzYfJanBf&count=10';
-
 const getDataTwo = async (argUrl) => {
     try {
         const resp = await fetch(argUrl);
