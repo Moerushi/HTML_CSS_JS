@@ -6,6 +6,8 @@
 [Курс "Основы JavaScript"](./js/js_basic_course/)  
 [Курс "Продолжение JavaScript"](./js/js_next_course/)  
 
-[Курс "JavaScript про ECMAScript"](./ECMAScript/)  
+[Курс "JavaScript про ECMAScript"](./js/ECMAScript/)  
+
+[Курс "Основы Node.js"](./js/node_js/)  
 
 [Дополнительная практика](./addition/js_beauty/) 

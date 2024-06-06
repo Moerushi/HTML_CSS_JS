@@ -1,0 +1,1 @@
+const nasaUrl = 'https://api.nasa.gov/planetary/apod?api_key=xurCHRuqhCdxIWpWlbZwB4veOjfsQnrUzYfJanBf&count=10';
