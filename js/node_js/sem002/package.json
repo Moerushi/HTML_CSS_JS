@@ -1,0 +1,19 @@
+{
+  "name": "sem002_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "moerushi",
+  "license": "ISC",
+  "description": "sem002_task",
+  "dependencies": {
+    "decimal.js": "^10.4.3",
+    "number-precision": "^1.6.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0"
+  }
+}

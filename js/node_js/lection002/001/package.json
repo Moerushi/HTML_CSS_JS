@@ -1,0 +1,14 @@
+{
+  "name": "first_pkg_to_test_publish",
+  "version": "1.0.0",
+  "description": "test package for study purposes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "moerushi",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}

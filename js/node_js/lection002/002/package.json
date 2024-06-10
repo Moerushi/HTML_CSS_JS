@@ -1,0 +1,18 @@
+{
+  "name": "simple_add_and_subtract_functions",
+  "version": "2.0.0",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "add",
+    "subtract"
+  ],
+  "author": "moerushi",
+  "license": "ISC",
+  "description": "This package was created to undestand the principles of my own project publication and allows to sum and subtract any numbers",
+  "dependencies": {
+    "simple_add_and_subtract_functions": "^2.0.0"
+  }
+}

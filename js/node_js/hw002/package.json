@@ -1,0 +1,13 @@
+{
+  "name": "study_lib_random_password",
+  "version": "1.0.0",
+  "description": "Формирует простой пароль из 14 символов (a-z, A-Z, 0-9)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": ["random password"],
+  "author": "",
+  "license": "ISC",
+  "repository": "https://github.com/Moerushi/HTML_CSS_JS/tree/main/js/node_js/hw002"
+}
