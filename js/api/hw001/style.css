@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.lesson {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #000;
+}
+
+button {
+    text-align: left;
+    width: 110px;
+}
