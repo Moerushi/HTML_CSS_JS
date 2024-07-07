@@ -3,22 +3,27 @@
     padding: 0;
 }
 
+.main-heading {
+    text-align: center;
+    margin: 10px;
+}
+
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 10px;
     margin: 10px;
     padding: 10px;
-    gap: 10px;
 }
 
 .lesson {
-
-    display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
+    display: flex;
+    border: 1px solid #000;
     padding: 10px;
     gap: 10px;
-    border: 1px solid #000;
+    flex-direction: column;
 }
 
 button {
