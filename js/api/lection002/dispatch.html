@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection002 (ex006)</title>
+</head>
+
+<body>
+    <button id="btn">Click</button>
+    <script>
+        const clickEvent = new Event('click'); // отдельное событие, независимое от пользователя
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', () => {
+            console.log('Clicked the button');
+        });
+        btn.dispatchEvent(clickEvent); // имитирование клика на кнопку
+    </script>
+</body>
+
+</html>

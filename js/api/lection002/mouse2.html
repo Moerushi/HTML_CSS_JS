@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection002 (ex002)</title>
+</head>
+
+<body>
+
+    <div id="context-menu">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+    <script>
+        const contextMenu = document.getElementById('context-menu');
+
+        document.addEventListener('click', (event) => {
+            if (event.target !== contextMenu) {
+                contextMenu.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if(event.code === 'Space'){
+                contextMenu.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

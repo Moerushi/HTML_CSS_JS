@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection002 (ex006)</title>
+</head>
+
+<body>
+    <button id="btn">Click</button>
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('click', (event) => {
+            if (event.isTrusted) { // когда нажимает пользователь
+                console.log('Click is trusted!');
+            } else { // когда нажимает автокликер
+                console.log('Click is not trusted!');
+            }
+        });
+        function simulateClick() {
+            const clickEvent = new Event('click', { bubbles: true });
+            button.dispatchEvent(clickEvent);
+        }
+
+        setTimeout(simulateClick, 2000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection002 (ex004)</title>
+</head>
+<body>
+    <div>
+        <p>
+            <span style="background: red;">Click me! It's span!</span>
+        </p>
+    </div>
+    <script>
+        for (let element of document.querySelectorAll('*')){
+            element.addEventListener('click', function (e) {
+                console.log(`Sinking ${element.tagName}`);
+            },true);
+            element.addEventListener('click', function (e) {
+                console.log(`Bubbling ${element.tagName}`);
+            });
+        }
+    </script>
+</body>
+</html>
