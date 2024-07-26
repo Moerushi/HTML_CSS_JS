@@ -64,12 +64,10 @@ function createArticleHtml(lesson) {
     <p class="lesson-time">Время: ${lesson.time}</p>
     <p class="max-person">Кол-во участников: ${lesson.maxParticipants}</p>
     <p class="current-person-num">Записано: ${lesson.currentParticipants}</p>
-    <button class="register-button"${lesson.maxParticipants <= lesson.currentParticipants || lesson.client.includes(navigator.userAgent) ? ' disabled' : ''}>Записаться</button>
-    <button class="cancel-registration"${!lesson.client.includes(navigator.userAgent) || lesson.currentParticipants === 0 ? ' disabled' : ''}>Отменить запись</button>
+    <button class="register-button"${lesson.maxParticipants <= lesson.currentParticipants || lesson.client?.includes(navigator.userAgent) ? ' disabled' : ''}>Записаться</button>
+    <button class="cancel-registration"${!lesson.client?.includes(navigator.userAgent) || lesson.currentParticipants === 0 ? ' disabled' : ''}>Отменить запись</button>
 </div>`
 }
-
-
 
 // Если максимальное количество участников достигнуто, либо пользователь уже записан на занятие, сделайте кнопку "записаться" неактивной.
 

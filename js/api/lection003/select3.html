@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection003 (ex)</title>
+</head>
+
+<body>
+    <h1>Goods list</h1>
+    <label for="sort-select">Sorting:</label>
+    <select id="sort-select">
+        <option value="asc">Increasing</option>
+        <option value="desc">Decreasing</option>
+    </select>
+
+    <ul id="product-list">
+        <li class="product-item">Good 1 - $50</li>
+        <li class="product-item">Good 2 - $30</li>
+        <li class="product-item">Good 3 - $70</li>
+        <li class="product-item">Good 4 - $20</li>
+    </ul>
+
+    <script>
+        const sortSelect = document.querySelector('#sort-select');
+        const productList = document.querySelector('#product-list');
+        const productItems = Array.from(document.querySelectorAll('.product-item'));
+
+        sortSelect.onchange = function () {
+            const selectedOption = sortSelect.value;
+            if (selectedOption === 'asc') {
+                productItems.sort((a, b) => {
+                    const priceA = parseInt(a.textContent.split('- $')[1]);
+                    const priceB = parseInt(b.textContent.split('- $')[1]);
+                    return priceA - priceB;
+                });
+            } else if (selectedOption === 'desc') {
+                productItems.sort((a, b) => {
+                    const priceA = parseInt(a.textContent.split('- $')[1]);
+                    const priceB = parseInt(b.textContent.split('- $')[1]);
+                    return priceB - priceA;
+                });
+            }
+
+            productItems.forEach(item => productList.appendChild(item));
+        };
+    </script>
+</body>
+
+</html>

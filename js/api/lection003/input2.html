@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection003 (ex)</title>
+</head>
+
+<body>
+    <h1>Comment form:</h1>
+    <textarea id="comment-input" rows="4" cols="50"></textarea>
+    <p>Chars number: <span id="char-count">0</span></p>
+
+    <script>
+        const commentInput = document.querySelector('#comment-input');
+        const charCountElement = document.querySelector('#char-count');
+
+        commentInput.addEventListener('input', unpdateCharCount);
+        commentInput.addEventListener('cut', unpdateCharCount);
+        commentInput.addEventListener('copy', unpdateCharCount);
+
+        function unpdateCharCount() {
+            setTimeout(() => {
+                const comment = commentInput.value;
+                const charCount = comment.length;
+                charCountElement.textContent = charCount;
+            }, 0);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection003 (ex)</title>
+    <style>
+        .invalid {
+            border-color: red;
+        }
+
+        #error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="superForm">
+        Your e-mail: <input type="email" name="input">
+        <div id="error"></div>
+    </form>
+    <script>
+        const input = document.forms.superForm.input;
+        const error = document.querySelector('#error');
+
+        input.addEventListener('blur', function (e) {
+            if (!input.value.includes('@')){
+                input.classList.add('invalid');
+                error.innerHTML = 'Input correct e-mail';
+            }
+        });
+
+        input.onfocus = function () {
+            if (!input.value.includes('invalid')){
+                input.classList.remove('invalid');
+                error.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

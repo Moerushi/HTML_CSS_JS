@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection003 (ex)</title>
+</head>
+1
+<body>
+    <script>
+        'use scrict';
+        // (async () => {
+        //     const url = 'https://catfact.ninja/fact';
+        //     const response = await fetch(url);
+        //     console.log(response.status);
+        //     console.log(response.ok);
+        //     const fact = await response.json();
+        //     console.log(fact);
+
+            // console.log(response.text());
+            // console.log(response.blob());
+            // console.log(response.arrayBuffer());
+            // console.log(response.formData());
+            // console.log(response.body);
+        // })();
+        
+        fetch('https://catfact.ninja/fact')
+        .then(response => response.json())
+        .then(console.log);
+
+        fetch('https://catfact.ninja/fact')
+        .then(response => response.json())
+        .then(obj => console.log(obj.fact));
+    </script>
+</body>
+
+</html>

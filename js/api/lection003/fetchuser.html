@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection003 (ex)</title>
+</head>
+
+<body>
+    <h1>Random user info:</h1>
+    <label for="sort-select">Sorting:</label>
+    <select id="sort-select">
+        <option value="name">By name</option>
+        <option value="age">By age</option>
+    </select>
+    <div id="user-list"></div>
+    <script>
+        const userListElement = document.querySelector('#user-list');
+        const sortSelect = document.querySelector('#sort-select');
+
+        // загружаем данные о пользователях с сервера
+        fetch('https://randomuser.me/api/?results=5')
+            .then(response => response.json())
+            .then(data => {
+                let users = data.results; // получаем массив с даннными о пользоваетлях
+                renderUserList(users); // вывод списка
+
+                sortSelect.addEventListener('change', () => {
+                    const selectedOption = sortSelect.value;
+                    users = sortUsers(users, selectedOption);
+                    renderUserList(users); // вывод списка
+                });
+            })
+            .catch(error => console.log(error))
+
+
+        function renderUserList(users) {
+            userListElement.innerHTML = '';
+            users.forEach(user => {
+                const userElement = createUserElement(user);
+                userListElement.appendChild(userElement);
+            });
+        }
+
+        function createUserElement(user) {
+            const userContainer = document.createElement('div');
+            userContainer.classList.add('user');
+
+            const userName = document.createElement('p');
+            userName.textContent = `Name: ${user.name.first} ${user.name.last}`;
+            userContainer.appendChild(userName);
+
+            const userAge = document.createElement('p');
+            userAge.textContent = `Age: ${user.dob.age}`;
+            userContainer.appendChild(userAge);
+
+            return userContainer;
+        }
+
+        function sortUsers(users, sortBy) {
+            return users.sort((a, b) => {
+                if (sortBy === 'name') {
+                    return a.name.first.localeCompare(b.name.first); // сортировка по имени с использованием метода localeCompare()
+                } else if (sortBy === 'age') {
+                    return a.dob.age - b.dob.age;
+                }
+            })
+        }
+
+    </script>
+</body>
+
+</html>

@@ -21,6 +21,7 @@ const slide = () => {
   slider.style.transform = `translateX(${slideOffset}px)`;
 }
 
-window.addEventListener('load', () => {
-  slide();
-});
+window.addEventListener('load', slide());
+
+// Замечания:
+// Нужно добавить точки, по которым тоже можно переключаться. Хотелось бы еще автопереключения слайдов, которое сбрасывается, если пользователь сам начинает переключать слайды.

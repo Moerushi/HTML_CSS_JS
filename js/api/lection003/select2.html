@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS API lection003 (ex)</title>
+</head>
+
+<body>
+    <h1>Choose country:</h1>
+    <form id="country-name">
+        <select id="country-select">
+            <option value="">Choose country</option>
+            <option value="russia">Russia</option>
+            <option value="usa">USA</option>
+            <option value="china">China</option>
+        </select>
+    </form>
+    <h2>Capital:</h2>
+    <p id="capital-info">Choose country to show the capital.</p>
+    <script>
+        const selectElement = document.getElementById('country-select');
+        const capitalInfoElement = document.getElementById('capital-info');
+
+        document.addEventListener('change', function (e) {
+            // body
+        });
+
+        selectElement.onchange = function () {
+            const selectedCountry = selectElement.value;
+            let capital = '';
+
+            switch (selectedCountry) {
+                case 'russia':
+                    capital = 'Moscow';
+                    break;
+                case 'usa':
+                    capital = 'Washington D.C.';
+                    break;
+                case 'china':
+                    capital = 'Beijing';
+                    break;
+                default:
+                    capital = 'Choose country to show the capital.';
+                    break;
+            }
+            capitalInfoElement.textContent = capital;
+        };
+    </script>
+</body>
+
+</html>
