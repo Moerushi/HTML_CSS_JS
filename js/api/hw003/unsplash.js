@@ -28,7 +28,6 @@ if (!localStorage.getItem(showedPhotos)) {
     localStorage.setItem(showedPhotos, photosBd);
 }
 const photos = JSON.parse(localStorage.getItem(showedPhotos));
-console.log(photos);
 
 // • Используя JavaScript и ваш API-ключ, получите случайное изображение из Unsplash каждый раз, когда пользователь загружает страницу. Обратите внимание, что должно подгружаться всегда случайное изображение, для этого есть отдельная ручка (эндпоинт) у API.
 
@@ -56,9 +55,8 @@ function addImage(data) {
         <img src="${data.urls.small}" alt="${data.alt_description} photo" data-id="${data.id}">
         <p class="user-name">Photographer: ${data.user.first_name} ${data.user.last_name}</p>
         ${data.description === null ? '' : `<p class="user-description">About: ${data.description}</p>`}
-        <i class="fa fa-heart fa-regular" aria-hidden="true"></i>
-        <span class="likes-counter">${data.likes}</span>
-        <p class="likes-counter">${data.id}</p>
+        <i class="fa fa-heart ${checkInLocalStorage(data) ? "fa-solid" : "fa-regular"}" aria-hidden="true"></i>
+        <span class="likes-counter">${checkInLocalStorage(data) ? photos[photos.findIndex((photo)=> photo.id === data.id)].likes : data.likes}</span>
         `;
 }
 
@@ -68,39 +66,38 @@ function searchLike() {
     let userLikesPhoto = false;
     const heartEl = document.querySelector(".fa-heart");
     const likeCountEl = document.querySelector(".likes-counter");
-    const id = heartEl.parentElement.querySelector('img').getAttribute("data-id");
     heartEl.addEventListener('click', () => {
         if (!userLikesPhoto) {
             heartEl.classList.remove("fa-regular");
             heartEl.classList.add("fa-solid");
             likeCountEl.innerHTML = Number(likeCountEl.innerHTML) + 1;
             userLikesPhoto = true;
-            // сохранить в локальное хранилище - в разработке
-            if (!photos.some(photo => photo.id === id)) {
-                photos.push({id: id, likes: Number(likeCountEl.innerHTML)});
-            }
-            localStorage.setItem(showedPhotos, JSON.stringify(photos));
         } else {
             heartEl.classList.remove("fa-solid");
             heartEl.classList.add("fa-regular");
             likeCountEl.innerHTML = Number(likeCountEl.innerHTML) - 1;
             userLikesPhoto = false;
-            // удалить из локального хранилища - в разработке
-            if (photos.some(photo => photo.id === id)) {
-                photos.splice(photos.findIndex((photo) => photo.id === id), 1);
-            }
-            localStorage.setItem(showedPhotos, JSON.stringify(photos));
         }
+        saveLikesInLocalStorage(heartEl);
     });
 }
 
 // • Добавьте функцию сохранения количества лайков в локальное хранилище, чтобы при новой загрузке страницы счетчик не сбрасывался, если будет показана та же самая картинка.
-function saveLikesInLocalStorage () {
-    
+function saveLikesInLocalStorage(heart) {
+    const id = heart.parentElement.querySelector('img').getAttribute("data-id");
+    if (!photos.some(photo => photo.id === id)) {
+        photos.push({ id: id, likes: Number(heart.parentElement.querySelector(".likes-counter").innerHTML) });
+    } else {
+        photos.splice(photos.findIndex((photo) => photo.id === id), 1);
+    }
+    localStorage.setItem(showedPhotos, JSON.stringify(photos));
 }
+
+function checkInLocalStorage(data) { if (photos.some(photo => photo.id === data.id)) return true; }
 
 // • Реализуйте возможность просмотра предыдущих фото с сохранением их в истории просмотров в localstorage.
 // в разработке
+
 
 // • Реализовать все с помощью async/await, без цепочем then.
 // реализовано
