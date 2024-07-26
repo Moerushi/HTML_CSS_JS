@@ -47,6 +47,7 @@ async function getRandomPhoto() {
 async function siteLoading() {
     const data = await getRandomPhoto();
     containerElement.insertAdjacentHTML('beforeend', addImage(data));
+    containerElement.insertAdjacentHTML('beforeend', loadDataFromLocalStorage(photos));
     searchLike();
 }
 
@@ -56,7 +57,7 @@ function addImage(data) {
         <p class="user-name">Photographer: ${data.user.first_name} ${data.user.last_name}</p>
         ${data.description === null ? '' : `<p class="user-description">About: ${data.description}</p>`}
         <i class="fa fa-heart ${checkInLocalStorage(data) ? "fa-solid" : "fa-regular"}" aria-hidden="true"></i>
-        <span class="likes-counter">${checkInLocalStorage(data) ? photos[photos.findIndex((photo)=> photo.id === data.id)].likes : data.likes}</span>
+        <span class="likes-counter">${checkInLocalStorage(data) ? photos[photos.findIndex((photo) => photo.id === data.id)].likes : data.likes}</span>
         `;
 }
 
@@ -96,8 +97,14 @@ function saveLikesInLocalStorage(heart) {
 function checkInLocalStorage(data) { if (photos.some(photo => photo.id === data.id)) return true; }
 
 // • Реализуйте возможность просмотра предыдущих фото с сохранением их в истории просмотров в localstorage.
-// в разработке
-
+function loadDataFromLocalStorage(photos) {
+    let str = `<p>Showed and liked photos: </p><ul>`;
+    photos.forEach(element => {
+        str += `<li>Id: ${element.id} Likes: ${element.likes}</li>`;
+    });
+    str += `</ul>`;
+    return str;
+}
 
 // • Реализовать все с помощью async/await, без цепочем then.
 // реализовано
