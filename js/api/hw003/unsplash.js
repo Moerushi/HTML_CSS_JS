@@ -19,7 +19,6 @@
 // • Создайте HTML-страницу с элементами: изображение, имя фотографа, кнопка "лайк" и счетчик лайков.
 const containerElement = document.querySelector('.user-container');
 
-let isFetching = false;
 document.addEventListener("DOMContentLoader", siteLoading());
 
 const photosBd = `[]`;
@@ -32,23 +31,22 @@ const photos = JSON.parse(localStorage.getItem(showedPhotos));
 // • Используя JavaScript и ваш API-ключ, получите случайное изображение из Unsplash каждый раз, когда пользователь загружает страницу. Обратите внимание, что должно подгружаться всегда случайное изображение, для этого есть отдельная ручка (эндпоинт) у API.
 
 async function getRandomPhoto() {
-    try {
-        isFetching = true;
         const response = await fetch(myUnsplashAccessKey);
         if (!response.ok) {
             throw new Error(`Ошибка от сервера. Статус: ${response.status}`);
         }
         return await response.json();
-    } finally {
-        isFetching = false;
-    }
 }
 
 async function siteLoading() {
-    const data = await getRandomPhoto();
-    containerElement.insertAdjacentHTML('beforeend', addImage(data));
-    containerElement.insertAdjacentHTML('beforeend', loadDataFromLocalStorage(photos));
-    searchLike();
+    try {
+        const data = await getRandomPhoto();
+        containerElement.insertAdjacentHTML('beforeend', addImage(data));
+        containerElement.insertAdjacentHTML('beforeend', loadDataFromLocalStorage(photos));
+        searchLike();
+    } catch {
+        console.log('Ошибка!');
+    }    
 }
 
 function addImage(data) {
@@ -94,7 +92,10 @@ function saveLikesInLocalStorage(heart) {
     localStorage.setItem(showedPhotos, JSON.stringify(photos));
 }
 
-function checkInLocalStorage(data) { if (photos.some(photo => photo.id === data.id)) return true; }
+// function checkInLocalStorage(data) { if (photos.some(photo => photo.id === data.id)) return true; }
+
+let checkInLocalStorage = (data) => (photos.some(photo => photo.id === data.id)) ? true : false;
+
 
 // • Реализуйте возможность просмотра предыдущих фото с сохранением их в истории просмотров в localstorage.
 function loadDataFromLocalStorage(photos) {
