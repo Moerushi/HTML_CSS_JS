@@ -10,10 +10,10 @@
 
 // window.close();
 // window.resizeTo(800, 600);
-console.log(window.location.href);
-console.log(window.innerWidth);
-console.log(window.innerHeight);
+// console.log(window.location.href);
+// console.log(window.innerWidth);
+// console.log(window.innerHeight);
 
-console.log(frames[0]);
+// console.log(frames.length);
 
 
