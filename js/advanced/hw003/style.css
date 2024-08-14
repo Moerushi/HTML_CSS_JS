@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.review {
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+span {
+    word-break: break-all;
+}
+
+.review:not(:last-child){
+    border-bottom: solid 1px black;
+}
+
+.text-area {
+    position: relative;
+    width: 390px;
+    padding: 5px;
+    word-break: break-all;
+    resize: none;
+    text-align: center;
+}
+
+.add {
+    width: 120px;
+    height: 25px;
+}
+
+.delete {
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+    color: red;
+    padding: 3px;
+    font-size: 25px;
+}
+
+.delete:hover {
+    text-shadow: 1px 1px 1px rgb(218, 121, 121);
+}
+
+.delete:active {
+    text-shadow: 1px 1px 1px white;
+}
