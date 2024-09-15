@@ -4,7 +4,7 @@ const weekDay = function () {
     name(number){return names[number]},
     number(name){return names.indexOf(name)}
     };
-}(); // функция вызывается мнгновенно
+}(); // функция вызывается мгновенно
 console.log(weekDay.name(weekDay.number('Monday')));
 
 // использование строки как кода и интерпретация как кода
