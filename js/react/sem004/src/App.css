@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: green;
+}
+
+.link.active {
+    color: orange;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}

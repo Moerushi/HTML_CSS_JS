@@ -19,22 +19,22 @@ export function CommentsList() {
         { id: 6, text: "Это шестой комментарий" }
     ]);
 
-    const deleteComment =(id) => setComments(previosArray => [...previosArray].filter((item) => item.id !=  id));
+    const deleteComment = (id) => setComments(previosArray => [...previosArray].filter((item) => item.id != id));
 
     return (
         <div>
-        <h1>Мои комментарии</h1>
-        <ul>
-        {comments.map((comment) => (
-            <li className={style.card} key={comment.id}>
-                {comment.text}
-                <button onClick={() => deleteComment(comment.id)}>Удалить</button>
-            </li>
-        ))}
-    </ul>
+            <h1>Мои комментарии</h1>
+            <ul>
+                {comments.map((comment) => (
+                    <li className={style.card} key={comment.id}>
+                        {comment.text}
+                        <button onClick={() => deleteComment(comment.id)}>Удалить</button>
+                    </li>
+                ))}
+            </ul>
         </div>)
 
-    
+
 
 }
 
