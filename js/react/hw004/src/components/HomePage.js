@@ -10,3 +10,14 @@
 // — Создайте два компонента: HomePage.jsx и AboutPage.jsx.
 // — В каждом компоненте добавьте простой текст, например, <h1>Главная страница</h1> для HomePage и <h1>О нас</h1> для AboutPage.
 // — Реализовать переходы.
+
+import hand from '../images/waving_hand.svg'
+
+export const HomePage = () => {
+    return (
+        <div>
+            <h1>Добро пожаловать!</h1>
+            <img src={hand} alt='hello' />
+        </div>
+    )
+}

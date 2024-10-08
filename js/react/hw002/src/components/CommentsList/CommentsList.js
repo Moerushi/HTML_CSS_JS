@@ -19,7 +19,7 @@ export function CommentsList() {
         { id: 6, text: "Это шестой комментарий" }
     ]);
 
-    const deleteComment = (id) => setComments(previosArray => [...previosArray].filter((item) => item.id != id));
+    const deleteComment = (id) => setComments(previousArray => [...previousArray].filter((item) => item.id != id));
 
     return (
         <div>

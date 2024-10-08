@@ -12,3 +12,21 @@
 // — Реализовать переходы.
 
 // НАВИГАЦИЮ СДЕЛАТЬ МАССИВОМ
+
+export const AboutPage = () => {
+    return (
+        <div className="about">
+            <h1>Задание:</h1>
+            <p> Создать приложение с двумя страницами: "Главная страница" и "О нас". На каждой странице должна быть навигационная ссылка для перехода на другую страницу.</p>
+            <p className="underlined">Шаги выполнения:</p>
+            <ul>
+                <li>Установка react-router-dom.Если еще не установлен, добавьте react-router-dom в ваш проект: npm install react-router-dom.</li>
+            </ul>
+            <p className="underlined">Создание компонентов:</p>
+            <ul>
+                <li>Создайте два компонента: HomePage.jsx и AboutPage.jsx</li>
+                <li>В каждом компоненте добавьте простой текст, например, &lt;h1&gt;Главная страница&lt;/h1&gt; для HomePage и &lt;h1&gt;О нас&lt;/h1&gt; для AboutPage.</li>
+            </ul>
+        </div>
+    )
+}

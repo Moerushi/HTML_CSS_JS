@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom';
+import './App.css';
+import { HomePage } from './components/HomePage';
+import { AboutPage } from './components/AboutPage';
+import { Footer } from './components/Footer';
+
+const routes = [
+  {
+    name: 'Главная',
+    path: '/',
+    component: <HomePage />
+  },
+  {
+    name: 'О нас',
+    path: '/about',
+    component: <AboutPage />
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <nav>
+      {routes.map((route, index) => (
+          <NavLink className='link' key={index} to={route.path}>{route.name}</NavLink>
+        ))}
+      </nav>
+      <Routes>
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} element={route.component} />
+        ))}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
