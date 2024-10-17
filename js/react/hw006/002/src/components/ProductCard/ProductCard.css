@@ -1,0 +1,22 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px solid #ffc400;
+    border-radius: 10px;
+    width: 200px;
+    min-height: 200px;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.productCard > * {
+    margin: 0;
+}
