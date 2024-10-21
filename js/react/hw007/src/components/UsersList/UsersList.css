@@ -1,0 +1,8 @@
+.usersList {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    border-top: 3px dashed rgb(36, 132, 187);;
+    border-bottom: 3px dashed rgb(36, 132, 187);;
+    padding: 20px;
+}

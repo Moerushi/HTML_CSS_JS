@@ -22,13 +22,8 @@ const productsSlice = createSlice({
         deleteProduct: (state, action) => {
             state.items = state.items.filter(item => item.id !== action.payload);
         },
-        updateProduct: (state, action) => {
-            const index = state.items.findIndex(
-                (product) => product.id === action.payload.id,
-            );
-            if (index !== -1) {
-                state.items[index] = action.payload;
-            }
+        editProduct: (state, action) => {
+            
         },
         availabilityProductChange: (state, action) => {
             const product = state.items.find(
@@ -37,12 +32,9 @@ const productsSlice = createSlice({
             if (product) {
                 product.available = !product.available;
             }
-        },
-        editProduct: (state, action) => {
-
         }
     }
 });
 
-export const { addProduct, deleteProduct, updateProduct, availabilityProductChange, editProduct } = productsSlice.actions;
+export const { addProduct, deleteProduct, editProduct, availabilityProductChange } = productsSlice.actions;
 export default productsSlice.reducer;

@@ -3,17 +3,18 @@
     flex-direction: column;
     padding: 10px;
     justify-content: space-between;
-    border: 1px solid #ffc400;
+    border: 1px solid;
     border-radius: 10px;
     width: 200px;
     min-height: 200px;
-    word-break: break-all;
+    word-break:normal;
     box-sizing: border-box;
 }
 
 .buttons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 5px;
 }
 

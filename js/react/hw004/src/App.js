@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom';
-import './App.css';
 import { HomePage } from './components/HomePage';
 import { AboutPage } from './components/AboutPage';
 import { Footer } from './components/Footer';

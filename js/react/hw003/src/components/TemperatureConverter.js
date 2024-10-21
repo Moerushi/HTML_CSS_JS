@@ -17,21 +17,23 @@ export const TemperatureConverter = () => {
   const [fahrenheit, setFahrenheit] = useState('');
 
   const convertValueToFahrenheit = (e) => {
-   setCelsius(e.target.value);
-   setFahrenheit((e.target.value * 9/5) + 32);
+    const value = parseFloat(e.target.value);
+    if (!isNaN(value)) setFahrenheit(((value * 9) / 5 + 32).toFixed(2));
+    setCelsius(e.target.value);
   }
-  
-  const convertValueToCelcius = (e) => {
-    setFahrenheit(e.target.value);
-    setCelsius((e.target.value - 32) * 5/9);
-   }
 
-   useEffect(() => {
+  const convertValueToCelsius = (e) => {
+    const value = parseFloat(e.target.value);
+    if (!isNaN(value)) setCelsius(((value - 32) * 5 / 9).toFixed(2));
+    setFahrenheit(e.target.value);
+  }
+
+  useEffect(() => {
     if (celsius.length === 0 || fahrenheit.length === 0) {
       setFahrenheit('');
       setCelsius('');
     }
-   }, [celsius, fahrenheit])
+  }, [celsius, fahrenheit])
 
   return (
     <div style={{ margin: "20px" }}>
@@ -39,7 +41,7 @@ export const TemperatureConverter = () => {
       <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', alignItems: 'center' }}>
         <TextField onChange={convertValueToFahrenheit} id="outlined-basic" value={celsius} label="Celsius" variant="outlined" />
         <p>=</p>
-        <TextField onChange={convertValueToCelcius} id="outlined-basic" label="Fahrenheit" value={fahrenheit} variant="outlined" />
+        <TextField onChange={convertValueToCelsius} id="outlined-basic" label="Fahrenheit" value={fahrenheit} variant="outlined" />
       </div>
     </div>
   )
