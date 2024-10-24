@@ -1,0 +1,121 @@
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  background-image: url(../../public/img/subscribe_background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 156px;
+
+  &__filter {
+    @include for-absolute-zero (left);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 244, 0.7);
+    z-index: 1;
+  }
+
+  &__quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-wrap: nowrap;
+    z-index: 3;
+
+    &__elipse-filter {
+      position: relative;
+      height: 96px;
+      width: 96px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      position: absolute;
+      top: -10.41px;
+      left: -24.29px;
+      z-index: 3;
+    }
+
+    &__text {
+      width: 359.45px;
+      color: rgb(34, 34, 36);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      z-index: 3;
+    }
+
+    &__italic {
+      font-style: italic;
+      z-index: 3;
+    }
+
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 104px;
+    padding-right: 93px;
+    z-index: 3;
+
+    &__form {
+      border-radius: 24.5px;
+      background-color: rgb(225, 225, 225);
+      overflow: hidden;
+    }
+
+    &_heading {
+      color: rgb(34, 34, 36);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 167.2%;
+    }
+
+    &__text {
+      color: rgb(34, 34, 36);
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    &__email {
+      padding-left: 22px;
+      width: 256px;
+      height: 49px;
+      background-color: rgb(225, 225, 225);
+      border: none;
+      color: rgb(34, 34, 36);
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 0.67;
+      outline: none;
+    }
+
+    &__buttom {
+      background-color: $highlightedSiteColor;
+      width: 100px;
+      height: 49px;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

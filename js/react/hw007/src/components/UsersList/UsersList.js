@@ -13,6 +13,5 @@ export const UsersList = () => {
                 {users.map(user => <UserCard key={user.id} {...user} />)}
             </div>
         </>
-
     )
 }

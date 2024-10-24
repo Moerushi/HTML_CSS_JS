@@ -1,0 +1,67 @@
+.brand {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  background-color: #F1E4E6;
+
+  &__left {
+    position: relative;
+    width: 50%;
+  }
+
+  &__image {
+    @include for-absolute-zero (right);
+    min-width: 50%;
+    height: 100%;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 50%;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    margin-top: 289.9px;
+    margin-bottom: 382.1px;
+    margin-left: 63.42px;
+  }
+
+  &__vertical-line {
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    background-color: $highlightedSiteColor;
+  }
+
+  &__heading-h1 {
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  &__heading-text {
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__heading-text:nth-child(2n-1) {
+    color: $highlightedSiteColor;
+  }
+
+}

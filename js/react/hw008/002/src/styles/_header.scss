@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  background: $darkBackColor;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 41px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 33px;
+
+    &__button {
+      position: relative;
+      appearance: none;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+
+    &__link {
+      @include for-absolute-zero (left);
+      width: 100%;
+      height: 100%;
+    }
+
+    &__cart {
+      position: relative;
+    }
+
+    &__cart::after {
+      content: "5";
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      position: absolute;
+      top: -8px;
+      right: -9px;
+      background-color: $highlightedSiteColor;
+      line-height: 19px;
+      color: $lightBackColor;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &__menu {
+      position: absolute;
+      box-sizing: border-box;
+      padding: 32px;
+      top: 81px;
+      width: 232px;
+      right: 0;
+      background-color: $lightBackColor;
+      z-index: 100;
+      transition: right 0.5s;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      ul {
+        padding-left: 21px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+
+      &__cross {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+      }
+
+      &__cross:hover {
+        opacity: 0.2;
+        cursor: pointer;
+      }
+
+      &__main {
+        color: $darkBackColor;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        padding-top: 9px;
+      }
+
+      &__block {
+        color: $highlightedSiteColor;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 12px;
+        margin-top: 20px;
+      }
+
+      &__link {
+        color: rgb(111, 110, 110);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-bottom: 11px;
+      }
+
+      &__link:hover {
+        color: $highlightedSiteColor;
+      }
+    }
+
+    #sandwich {
+      position: absolute;
+      left: -999999px;
+      visibility: hidden;
+    }
+
+    #sandwich:checked~&__menu {
+      right: -250px;
+    }
+
+  }
+
+}

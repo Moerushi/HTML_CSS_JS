@@ -1,0 +1,181 @@
+.product-description__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  position: relative;
+  height: 664px;
+}
+
+.product-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  position: absolute;
+  top: -64px;
+  width: 100%;
+  max-width: $siteWidth;
+  background-color: #ffffff;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  border: 1px solid rgb(234, 234, 234);
+
+  &__title {
+    color: $highlightedSiteColor;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__topline {
+    background-color: $highlightedSiteColor;
+    width: 63px;
+    height: 3px;
+    margin-bottom: 12px;
+  }
+
+  &__product-name {
+    color: rgb(77, 77, 77);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__product-text {
+    color: rgb(94, 94, 94);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 32px;
+    max-width: 555px;
+    padding: 0 16px;
+  }
+
+  &__product-price {
+    color: $highlightedSiteColor;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  &__bottomline {
+    background-color: rgb(234, 234, 234);
+    width: 641px;
+    height: 1px;
+    margin-bottom: 65px;
+  }
+
+  &__product-options {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 49px;
+    gap: 23px;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      gap: 9px;
+      position: relative;
+    }
+
+    &__summary {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      gap: 9px;
+      color: rgb(111, 110, 110);
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &__summary::after {
+      content: url(../../public/img/arrow_down.svg);
+      line-height: 0;
+    }
+
+    &__choise {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      position: absolute;
+      margin: 5px;
+      padding: 9px 30px 9px 9px;
+      background-color: $lightBackColor;
+      box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+      box-sizing: border-box;
+      gap: 9px;
+    }
+
+    &__label {
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      gap: 9px;
+      color: rgb(111, 110, 110);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+    }
+  }
+
+  &__addtocart {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 1px solid $highlightedSiteColor;
+    background-color: $lightBackColor;
+    padding: 15px 24px;
+    gap: 23px;
+
+    &:hover {
+      background-color: $highlightedSiteColor;
+    }
+
+    &:hover &__text {
+      color: $lightBackColor;
+    }
+
+    &:hover svg {
+      fill: $lightBackColor;
+    }
+
+    &__text {
+      color: $highlightedSiteColor;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      text-align: left;
+    }
+  }
+
+}
