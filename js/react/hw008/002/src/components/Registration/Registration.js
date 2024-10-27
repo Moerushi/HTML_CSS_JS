@@ -9,7 +9,7 @@ export const Registration = () => {
 
       <form className="registration__forms">
         <div className="registration__part">
-          <label for="firstname" className="registration__forms__heading">Your name</label>
+          <label htmlFor="firstname" className="registration__forms__heading">Your name</label>
 
           <input className="input" type="text" name="personal" id="firstname" placeholder="First Name" required />
           <input className="input" type="text" name="personal" id="lastname" placeholder="Last Name" required />
@@ -26,7 +26,7 @@ export const Registration = () => {
         </div>
 
         <div className="registration__part">
-          <label for="password" className="registration__forms__heading">Login details</label>
+          <label htmlFor="password" className="registration__forms__heading">Login details</label>
           <input className="input" type="email" name="details" id="email" placeholder="Email" required />
           <input className="input" type="password" name="details" id="password" placeholder="Password" required />
           <p className="registration__forms__text">

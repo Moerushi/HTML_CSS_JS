@@ -10,7 +10,7 @@ export const ProdPage = () => {
     <PageTitle name='NEW ARRIVALS' />
     <Carousel />
     <UniqueProdCard />
-    <div class="other-products center">
+    <div className="other-products center">
         <ProductsList />
     </div>
     </>

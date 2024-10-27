@@ -1,19 +1,16 @@
 import React from 'react'
 import { ProductCard } from '../ProductCard/ProductCard'
-
-const prodArr = []
-
-for (let index = 0; index < 6; index++) {
-  prodArr.push(<ProductCard />);
-
-}
+import { useSelector } from 'react-redux';
 
 export const ProductsList = () => {
+
+  const { products } = useSelector((state) => state.products);
+
   return (
 
-    <div class="products__box">
+    <div className="products__box">
 
-      {prodArr.map(item => item)}
+      {products.map((item, index) => <div key={index} className="products__card">{<ProductCard {...item}/>}</div>)}
 
     </div>
 

@@ -3,7 +3,7 @@ import React from 'react'
 export const Menu = () => {
   return (
     <nav className="header__right__menu">
-          <label for="sandwich">
+          <label htmlFor="sandwich">
             <svg className="header__right__menu__cross" width="12.011719" height="12.011719" viewBox="0 0 12.0117 12.0117"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 

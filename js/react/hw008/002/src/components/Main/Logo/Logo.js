@@ -1,12 +1,11 @@
 import React from 'react'
-import brand_box_image from '../../../assets/brand_box_image.svg'
 
 export const Logo = () => {
   return (
     
     <div className="brand center">
     <div className="brand__left">
-      <img src={brand_box_image} alt="brand_man" className="brand__image" />
+      <img src='./img/brand_box_image.svg' alt="brand_man" className="brand__image" />
     </div>
     <div className="brand__right">
 

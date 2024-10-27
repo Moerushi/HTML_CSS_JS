@@ -1,5 +1,4 @@
 import '../../styles/style.scss'
-import subscribe_woman from '../../assets/subscribe_woman.svg'
 
 export const Subscription = () => {
   return (
@@ -8,7 +7,7 @@ export const Subscription = () => {
       <div className="subscribe__filter"></div>
       <div className="subscribe__quote">
         <div className="subscribe__quote__elipse-filter">
-          <img src={subscribe_woman} alt="subscribe__quote__img" className="subscribe__quote__img" />
+          <img src='./img/subscribe_woman.svg' alt="subscribe__quote__img" className="subscribe__quote__img" />
         </div>
         <p className="subscribe__quote__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
             className="subscribe__quote__italic">a pulvinar purus condimentum</span>“</p>

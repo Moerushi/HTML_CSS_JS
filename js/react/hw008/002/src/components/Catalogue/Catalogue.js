@@ -9,7 +9,7 @@ export const Catalogue = () => {
     <>
       <PageTitle name='NEW ARRIVALS' />
       <Filter />
-      <div class="products center">
+      <div className="products center">
         <ProductsList />
       </div>
       <Pagination />

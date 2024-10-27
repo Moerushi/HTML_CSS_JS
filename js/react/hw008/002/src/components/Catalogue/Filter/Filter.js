@@ -4,7 +4,7 @@ import { Sorting } from './Sorting/Sorting'
 
 export const Filter = () => {
   return (
-    <div class="filter-sort center">
+    <div className="filter-sort center">
       <ProdFilter />
       <Sorting />
     </div>

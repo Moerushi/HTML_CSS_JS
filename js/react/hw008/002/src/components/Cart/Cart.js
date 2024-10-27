@@ -7,7 +7,7 @@ export const Cart = () => {
   return (
     <>
     <PageTitle name='SHOPPING CART'/>
-    <div class="shopping-cart__content center">
+    <div className="shopping-cart__content center">
     <CartItems />
     <FormOrder />
     </div>

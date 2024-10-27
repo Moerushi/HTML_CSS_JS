@@ -9,8 +9,18 @@ import { Cart } from './components/Cart/Cart';
 import { Catalogue } from './components/Catalogue/Catalogue';
 import { ProdPage } from './components/ProdPage/ProdPage';
 import ScrollToTop from './services/ScrollToTop';
+import { useDispatch, useSelector } from 'react-redux';
+import {fetchProducts} from './redux/slicers/productsSlice'
+import { useEffect } from 'react'
+
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch])
+
   return (
     <Router>
       <ScrollToTop />
@@ -20,7 +30,7 @@ function App() {
         <Route path='/registration' element={<Registration />} /> {/* registration */}
         <Route path='/cart' element={<Cart />} /> {/* product card */}
         <Route path='/catalogue' element={<Catalogue />} /> {/* catalogue */}
-        <Route path='/products/product' element={<ProdPage />} /> {/* product card */}
+        <Route path='/products/:prodId' element={<ProdPage />} /> {/* product card */}
       </Routes>
       <Subscription />
       <Footer />

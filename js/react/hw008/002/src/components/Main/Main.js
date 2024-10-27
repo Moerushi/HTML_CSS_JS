@@ -18,7 +18,7 @@ export const Main = () => {
         <ProductsList />
 
         <Link to="/catalogue">
-          <div class="products__button">Browse All Product</div>
+          <div className="products__button">Browse All Product</div>
         </Link>
       </div>
       <Features />

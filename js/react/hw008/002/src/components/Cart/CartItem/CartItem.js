@@ -1,26 +1,22 @@
 import React from 'react'
 
-import products_one from '../../../assets/products_one.svg'
-
-
-export const CartItem = () => {
+export const CartItem = ({id, imgSrc, color, title, price}) => {
     return (
-        <div className="shopping-cart__left__cards">
-
+        <>
             <div className="shopping-cart__left__item">
-                <img className="shopping-cart__left__img" src={products_one} alt="img" />
+                <img className="shopping-cart__left__img" src={imgSrc} alt="img" />
 
                 <div className="shopping-cart__left__textbox">
-                    <h2 className="shopping-cart__left__heading">MANGO PEOPLE T-SHIRT</h2>
+                    <h2 className="shopping-cart__left__heading">{title}</h2>
                     <div className="shopping-cart__left__description">
                         <p className="shopping-cart__left__text">Price: <span
-                            className="shopping-cart__left__text shopping-cart__left__text_highlight">$300</span></p>
+                            className="shopping-cart__left__text shopping-cart__left__text_highlight">${price}</span></p>
                         <p className="shopping-cart__left__text">Color: <span
-                            className="shopping-cart__left__text shopping-cart__left__text_attribute">Red</span></p>
+                            className="shopping-cart__left__text shopping-cart__left__text_attribute">{color}</span></p>
                         <p className="shopping-cart__left__text">Size: <span
-                            className="shopping-cart__left__text shopping-cart__left__text_attribute">XL</span></p>
+                            className="shopping-cart__left__text shopping-cart__left__text_attribute">SIZE</span></p>
                         <p className="shopping-cart__left__text">Quantity: <span
-                            className="shopping-cart__left__text shopping-cart__left__text_border shopping-cart__left__text_attribute">2</span>
+                            className="shopping-cart__left__text shopping-cart__left__text_border shopping-cart__left__text_attribute">1</span>
                         </p>
                     </div>
 
@@ -34,7 +30,6 @@ export const CartItem = () => {
                 </div>
 
             </div>
-
-        </div>
+        </>
     )
 }

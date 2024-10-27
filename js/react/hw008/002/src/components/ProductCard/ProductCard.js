@@ -1,28 +1,32 @@
 import React from 'react'
-import header_cart from '../../assets/header_cart.svg'
-import products_one from '../../assets/products_one.svg'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../../redux/slicers/cartSlice';
 
-export const ProductCard = () => {
+export const ProductCard = ({id, imgSrc, title, price, description}) => {
+
+  const { products } = useSelector((state) => state.products);
+  const dispatch = useDispatch();
+
   return (
-    <div className="products__card">
+    <>
       <div className="products__card-imagebox">
-        <div className="products__card-imagebox-bg">
-          <a href="#">
-            <div className="products__card-imagebox-bg-buy">
-              <img src={header_cart} alt="imagebox-bg-img" className="imagebox-bg-img" />
+        <div onClick={() => dispatch(addToCart(products.find(item => item.id === id)))} className="products__card-imagebox-bg">
+
+            <div  className="products__card-imagebox-bg-buy">
+              <img src='./img/header_cart.svg' alt="imagebox-bg-img" className="imagebox-bg-img" />
               <p className="products__imagebox-bg-text">Add to Cart</p>
             </div>
-          </a>
+
         </div>
-        <img src={products_one} alt="product image" className="products_card_img" />
+        <img src={imgSrc} alt="product image" className="products_card_img" />
       </div>
 
       <div className="products__card-textbox">
-        <Link to="/products/product" className="products__card-title">ELLERY X M'O CAPSULE</Link>
-        <p className="products__card-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-        <p className="products__card-price">$ 52.00</p>
+        <Link to={`/products/${id}`} className="products__card-title">{title}</Link>
+        <p className="products__card-description">{description}</p>
+        <p className="products__card-price">$ {price}</p>
       </div>
-    </div>
+    </>
   )
 }

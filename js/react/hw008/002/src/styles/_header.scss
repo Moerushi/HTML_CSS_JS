@@ -43,23 +43,23 @@
 
     &__cart {
       position: relative;
+      &__label {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        position: absolute;
+        top: -8px;
+        right: -9px;
+        background-color: $highlightedSiteColor;
+        line-height: 19px;
+        color: $lightBackColor;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+      }
     }
 
-    &__cart::after {
-      content: "5";
-      width: 19px;
-      height: 19px;
-      border-radius: 50%;
-      position: absolute;
-      top: -8px;
-      right: -9px;
-      background-color: $highlightedSiteColor;
-      line-height: 19px;
-      color: $lightBackColor;
-      font-size: 12px;
-      font-weight: 400;
-      text-align: center;
-    }
+
 
     &__menu {
       position: absolute;

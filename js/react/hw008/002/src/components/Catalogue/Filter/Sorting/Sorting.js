@@ -2,44 +2,44 @@ import React from 'react'
 
 export const Sorting = () => {
   return (
-    <div class="sort">
+    <div className="sort">
 
-    <details class="sort__details">
-      <summary class="sort__summary">
-        <span class="sort__heading">TRENDING NOW</span>
+    <details className="sort__details">
+      <summary className="sort__summary">
+        <span className="sort__heading">TRENDING NOW</span>
       </summary>
     </details>
 
-    <details class="sort__details">
-      <summary class="sort__summary">
-        <span class="sort__heading">SIZE</span>
+    <details className="sort__details">
+      <summary className="sort__summary">
+        <span className="sort__heading">SIZE</span>
       </summary>
 
-      <div class="sort__box">
+      <div className="sort__box">
 
-        <label class="sort__check" for="xs-size">
-          <input class="sort__check__checkbox" type="checkbox" id="xs-size" />
+        <label className="sort__check" htmlFor="xs-size">
+          <input className="sort__check__checkbox" type="checkbox" id="xs-size" />
           XS</label>
 
-        <label class="sort__check" for="s-size">
-          <input class="sort__check__checkbox" type="checkbox" id="s-size" />
+        <label className="sort__check" htmlFor="s-size">
+          <input className="sort__check__checkbox" type="checkbox" id="s-size" />
           S</label>
 
-        <label class="sort__check" for="m-size">
-          <input class="sort__check__checkbox" type="checkbox" id="m-size" />
+        <label className="sort__check" htmlFor="m-size">
+          <input className="sort__check__checkbox" type="checkbox" id="m-size" />
           M</label>
 
-        <label class="sort__check" for="l-size">
-          <input class="sort__check__checkbox" type="checkbox" id="l-size" />
+        <label className="sort__check" htmlFor="l-size">
+          <input className="sort__check__checkbox" type="checkbox" id="l-size" />
           L</label>
 
       </div>
 
     </details>
 
-    <details class="sort__details">
-      <summary class="sort__summary">
-        <span class="sort__heading">PRICE</span>
+    <details className="sort__details">
+      <summary className="sort__summary">
+        <span className="sort__heading">PRICE</span>
       </summary>
     </details>
   </div>
