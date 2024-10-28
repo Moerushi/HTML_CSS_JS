@@ -1,10 +1,17 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { deleteFromCart } from '../../../redux/slicers/cartSlice';
 
-export const CartItem = ({id, imgSrc, color, title, price}) => {
+export const CartItem = ({id, imgSrc, color, title, price, cartItemId}) => {
+
+    const dispatch = useDispatch();
+
     return (
         <>
             <div className="shopping-cart__left__item">
+                <div className='shopping-cart__left__item__div'>
                 <img className="shopping-cart__left__img" src={imgSrc} alt="img" />
+                </div>  
 
                 <div className="shopping-cart__left__textbox">
                     <h2 className="shopping-cart__left__heading">{title}</h2>
@@ -20,7 +27,7 @@ export const CartItem = ({id, imgSrc, color, title, price}) => {
                         </p>
                     </div>
 
-                    <svg className="shopping-cart__left__cross" width="12.011719" height="12.011719" viewBox="0 0 12.0117 12.0117"
+                    <svg onClick={() => dispatch(deleteFromCart(cartItemId))}className="shopping-cart__left__cross" width="12.011719" height="12.011719" viewBox="0 0 12.0117 12.0117"
                         fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 
                         <path id="menuCrossTwo"

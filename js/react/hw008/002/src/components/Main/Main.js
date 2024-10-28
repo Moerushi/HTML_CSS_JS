@@ -16,7 +16,6 @@ export const Main = () => {
           <p className="products__title__text">Shop for items based on what we featured in this week</p>
         </div>
         <ProductsList />
-
         <Link to="/catalogue">
           <div className="products__button">Browse All Product</div>
         </Link>

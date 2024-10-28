@@ -29,7 +29,6 @@ const productsSlice = createSlice({
             builder
                 .addCase(fetchProducts.fulfilled, (state, action) => {
                     state.products = action.payload;
-                    
                 })
         }
 });

@@ -16,6 +16,7 @@ import { useEffect } from 'react'
 
 function App() {
   const dispatch = useDispatch();
+  const {products} = useSelector((state) => state.products)
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -30,7 +31,7 @@ function App() {
         <Route path='/registration' element={<Registration />} /> {/* registration */}
         <Route path='/cart' element={<Cart />} /> {/* product card */}
         <Route path='/catalogue' element={<Catalogue />} /> {/* catalogue */}
-        <Route path='/products/:prodId' element={<ProdPage />} /> {/* product card */}
+        <Route path='/products/:prodId' element={<ProdPage products={products}/>} /> {/* product card */}
       </Routes>
       <Subscription />
       <Footer />

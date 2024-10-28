@@ -87,7 +87,6 @@
         gap: 48px;
         justify-content: center;
       }
-
     }
 
     &__right {
@@ -109,7 +108,7 @@
 
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
 
   $siteWidth: 375px;
 
@@ -313,13 +312,15 @@
         }
 
         &__item {
-          max-width: 100%;
+          width: 333px;
+          height: 188px;
+          &__div{
+            width: 143px;
+          }
         }
 
         &__img {
-          width: 143px;
           height: 188px;
-          object-fit: cover;
         }
 
         &__textbox {
@@ -363,7 +364,7 @@
 
         &__buttom {
           font-size: 12px;
-          line-height: 14px;
+          line-height: 32px;
           min-width: 174px;
           min-height: 32px;
         }

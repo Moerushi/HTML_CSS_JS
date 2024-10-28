@@ -1,62 +1,95 @@
 [
-    { 
-    "id": 1,
-    "imgSrc" : "./img/products_one.svg",
-    "title" : "WHITE T-SHIRT",
-    "price" : 52.2,
-    "color" : "White",
-    "sizes" : ["S","M","L","X","XL"],
-    "description" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-    "quantity" : 1
+    {
+        "id": 1,
+        "category": "MEN",
+        "imgSrc": "./img/products_one.svg",
+        "title": "WHITE T-SHIRT",
+        "price": 52.2,
+        "colors": ["White", "Black"],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "X",
+            "XL"
+        ],
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "quantity": 1
     },
-    { 
-    "id": 2,
-    "imgSrc" : "./img/products_two.svg",
-    "title" : "RED BLOUSE",
-    "price" : 31,
-    "color" : "Red",
-    "sizes" : ["S","M","L"],
-    "description" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-    "quantity" : 1
+    {
+        "id": 2,
+        "category": "WOMEN",
+        "imgSrc": "./img/products_two.svg",
+        "title": "RED BLOUSE",
+        "price": 31,
+        "colors": ["Red"],
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ],
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "quantity": 1
     },
-    { 
-    "id": 3,
-    "imgSrc" : "./img/products_three.svg",
-    "title" : "BLUE JACKET",
-    "price" : 73.00,
-    "color" : "Blue",
-    "sizes" : ["XL","X","L"],
-    "description" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-    "quantity" : 1
+    {
+        "id": 3,
+        "category": "WOMEN",
+        "imgSrc": "./img/products_three.svg",
+        "title": "BLUE JACKET",
+        "price": 73.00,
+        "colors": ["Blue"],
+        "sizes": [
+            "XL",
+            "X",
+            "L"
+        ],
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "quantity": 1
     },
-    { 
-    "id": 4,
-    "imgSrc" : "./img/products_four.svg",
-    "title" : "FLOWER DRESS",
-    "price" : 88.00,
-    "color" : "White",
-    "sizes" : ["S","M","L","X","XL"],
-    "description" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-    "quantity" : 1
+    {
+        "id": 4,
+        "category": "WOMEN",
+        "imgSrc": "./img/products_four.svg",
+        "title": "FLOWER DRESS",
+        "price": 88.00,
+        "colors": ["White"],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "X",
+            "XL"
+        ],
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "quantity": 1
     },
-    { 
-    "id": 5,
-    "imgSrc" : "./img/products_five.svg",
-    "title" : "STRIPED DRESS",
-    "price" : 120.00,
-    "color" : "White-Black",
-    "sizes" : ["S","M"],
-    "description" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-    "quantity" : 1
+    {
+        "id": 5,
+        "category": "WOMEN",
+        "imgSrc": "./img/products_five.svg",
+        "title": "STRIPED DRESS",
+        "price": 120.00,
+        "colors": ["Black"],
+        "sizes": [
+            "S",
+            "M"
+        ],
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "quantity": 1
     },
-    { 
-    "id": 6,
-    "imgSrc" : "./img/products_six.svg",
-    "title" : "SILVER-GREY SUIT",
-    "price" : 21.00,
-    "color" : "Grey",
-    "sizes" : ["S","M","L"],
-    "description" : "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-    "quantity" : 1
+    {
+        "id": 6,
+        "category": "WOMEN",
+        "imgSrc": "./img/products_six.svg",
+        "title": "SILVER-GREY SUIT",
+        "price": 21.00,
+        "colors": ["Grey"],
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ],
+        "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "quantity": 1
     }
 ]

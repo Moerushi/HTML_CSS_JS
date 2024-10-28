@@ -17,8 +17,8 @@ export const FormOrder = () => {
       </form>
 
       <div className="shopping-cart__right__total">
-        <p className="shopping-cart__right__sub-total">SUB TOTAL<span className='shopping-cart__right__sub-total__label'>${total}</span></p>
-        <p className="shopping-cart__right__grand-total">GRAND TOTAL<span className="shopping-cart__right__grand-total__label">${total}</span></p>
+        <p className="shopping-cart__right__sub-total">SUB TOTAL<span className='shopping-cart__right__sub-total__label'>${total.toFixed(2)}</span></p>
+        <p className="shopping-cart__right__grand-total">GRAND TOTAL<span className="shopping-cart__right__grand-total__label">${total.toFixed(2)}</span></p>
         <div className="shopping-cart__right__line"></div>
         <button type="submit" className="shopping-cart__right__buttom">PROCEED TO CHECKOUT</button>
       </div>

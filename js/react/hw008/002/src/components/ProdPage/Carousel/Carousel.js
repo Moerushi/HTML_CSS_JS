@@ -5,7 +5,7 @@ export const Carousel = () => {
     <div className="carousel center">
 
     <div className="carousel__item">
-      <img src='./img/carousel_img.svg' alt="carousel_img" />
+      <img src='./img/brand_box_image.svg' alt="carousel_img" />
     </div>
 
     <div className="carousel__buttons-box">
