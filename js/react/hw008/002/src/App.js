@@ -10,13 +10,13 @@ import { Catalogue } from './components/Catalogue/Catalogue';
 import { ProdPage } from './components/ProdPage/ProdPage';
 import ScrollToTop from './services/ScrollToTop';
 import { useDispatch, useSelector } from 'react-redux';
-import {fetchProducts} from './redux/slicers/productsSlice'
+import { fetchProducts } from './redux/slicers/productsSlice'
 import { useEffect } from 'react'
 
 
 function App() {
   const dispatch = useDispatch();
-  const {products} = useSelector((state) => state.products)
+  const { products } = useSelector((state) => state.products)
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -31,7 +31,7 @@ function App() {
         <Route path='/registration' element={<Registration />} /> {/* registration */}
         <Route path='/cart' element={<Cart />} /> {/* product card */}
         <Route path='/catalogue' element={<Catalogue />} /> {/* catalogue */}
-        <Route path='/products/:prodId' element={<ProdPage products={products}/>} /> {/* product card */}
+        <Route path='/:prodId' element={<ProdPage products={products} />} /> {/* product card */}
       </Routes>
       <Subscription />
       <Footer />

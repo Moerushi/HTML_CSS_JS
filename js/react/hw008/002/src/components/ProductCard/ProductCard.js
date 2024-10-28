@@ -23,7 +23,8 @@ export const ProductCard = ({id, imgSrc, title, price, description}) => {
       </div>
 
       <div className="products__card-textbox">
-        <Link to={`/products/${id}`} className="products__card-title">{title}</Link>
+        <Link to={`/${id}`} className="products__card-title">{title}</Link>
+
         <p className="products__card-description">{description}</p>
         <p className="products__card-price">$ {price}</p>
       </div>

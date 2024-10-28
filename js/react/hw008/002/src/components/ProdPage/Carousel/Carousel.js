@@ -1,11 +1,12 @@
 import React from 'react'
 
-export const Carousel = () => {
+export const Carousel = ({imgSrc}) => {
   return (
     <div className="carousel center">
 
     <div className="carousel__item">
-      <img src='./img/brand_box_image.svg' alt="carousel_img" />
+      <img src={imgSrc} alt="carousel_img" />
+      
     </div>
 
     <div className="carousel__buttons-box">
