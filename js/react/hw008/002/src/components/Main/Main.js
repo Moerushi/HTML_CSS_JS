@@ -5,7 +5,7 @@ import { Features } from './Features/Features'
 import { ProductsList } from '../ProductsList/ProductsList'
 import { Link } from 'react-router-dom'
 
-export const Main = () => {
+export const Main = ({products}) => {
   return (
     <>
       <Logo />
@@ -15,7 +15,7 @@ export const Main = () => {
           <h2 className="products__title__h2">Featured Items</h2>
           <p className="products__title__text">Shop for items based on what we featured in this week</p>
         </div>
-        <ProductsList />
+        <ProductsList list={products}/>
         <Link to="/catalogue">
           <div className="products__button">Browse All Product</div>
         </Link>

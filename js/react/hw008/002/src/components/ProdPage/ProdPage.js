@@ -16,7 +16,7 @@ export const ProdPage = ({products}) => {
       <Carousel imgSrc={thisProd.imgSrc}/>
       <UniqueProdCard {...thisProd} />
       <div className="other-products center">
-        <ProductsList />
+        <ProductsList list={products}/>
       </div>
     </>
   )

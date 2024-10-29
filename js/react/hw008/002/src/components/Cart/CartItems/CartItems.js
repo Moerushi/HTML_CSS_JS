@@ -12,7 +12,7 @@ export const CartItems = () => {
   return (
     <div className="shopping-cart__left">
 
-      {itemsInCart.length ? itemsInCart.map((item, index) => <div key={index} className="shopping-cart__left__cards"><CartItem {...item} /></div>) : <div className="shopping-cart__right__heading">Your cart is empty!</div>}
+      {itemsInCart.length ? itemsInCart.map((item, index) => <div key={index} className="shopping-cart__left__cards"><CartItem {...item} /></div>) : <div className="shopping-cart__right__heading">Your cart is empty! Add something!</div>}
 
       <div className="shopping-cart__left__buttoms">
           <button onClick={() => dispatch(clearCart())} className="shopping-cart__left__buttom">CLEAR SHOPPING CART</button>

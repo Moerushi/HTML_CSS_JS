@@ -12,6 +12,7 @@
   &__left {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 72px;
 
     &__cards {
@@ -106,7 +107,7 @@
       flex-direction: row;
       gap: 10px;
       justify-content: space-between;
-      // width: 569px;
+      width: 569px;
     }
 
     &__buttom {

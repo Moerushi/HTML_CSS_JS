@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { deleteFromCart } from '../../../redux/slicers/cartSlice';
 
-export const CartItem = ({id, imgSrc, color, title, price, cartItemId}) => {
+export const CartItem = ({imgSrc, color, title, price, cartItemId, size, quantity}) => {
 
     const dispatch = useDispatch();
 
@@ -21,9 +21,9 @@ export const CartItem = ({id, imgSrc, color, title, price, cartItemId}) => {
                         <p className="shopping-cart__left__text">Color: <span
                             className="shopping-cart__left__text shopping-cart__left__text_attribute">{color}</span></p>
                         <p className="shopping-cart__left__text">Size: <span
-                            className="shopping-cart__left__text shopping-cart__left__text_attribute">SIZE</span></p>
+                            className="shopping-cart__left__text shopping-cart__left__text_attribute">{size}</span></p>
                         <p className="shopping-cart__left__text">Quantity: <span
-                            className="shopping-cart__left__text shopping-cart__left__text_border shopping-cart__left__text_attribute">1</span>
+                            className="shopping-cart__left__text shopping-cart__left__text_border shopping-cart__left__text_attribute">{quantity}</span>
                         </p>
                     </div>
 

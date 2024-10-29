@@ -5,7 +5,7 @@ export const Carousel = ({imgSrc}) => {
     <div className="carousel center">
 
     <div className="carousel__item">
-      <img src={imgSrc} alt="carousel_img" />
+      <img src={'.'+imgSrc} alt="carousel_img" />
       
     </div>
 

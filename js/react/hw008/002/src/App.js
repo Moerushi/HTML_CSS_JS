@@ -27,11 +27,11 @@ function App() {
       <ScrollToTop />
       <Header />
       <Routes>
-        <Route path='/' element={<Main />} /> {/* main */}
+        <Route path='/' element={<Main products={products}/>} /> {/* main */}
         <Route path='/registration' element={<Registration />} /> {/* registration */}
         <Route path='/cart' element={<Cart />} /> {/* product card */}
         <Route path='/catalogue' element={<Catalogue />} /> {/* catalogue */}
-        <Route path='/:prodId' element={<ProdPage products={products} />} /> {/* product card */}
+        <Route path='/products/:prodId' element={<ProdPage products={products} />} /> {/* product card */}
       </Routes>
       <Subscription />
       <Footer />
