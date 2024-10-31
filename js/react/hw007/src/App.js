@@ -11,8 +11,8 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchUsers());
-  }, [dispatch])
+    if (!users.length) dispatch(fetchUsers());
+    }, [dispatch, users.length]);
 
   return (
 
@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<><p>Chose user above to show detailed information!</p></>}/>
             {users.map((user) => (
-              <Route key={user.id} path={`/${user.id}`} element={<UserInfo {...user} />} />
+              <Route key={user.id} path={`/${user.id}`} element={<UserInfo />} />
             ))}
           </Routes>
         </div> : null}

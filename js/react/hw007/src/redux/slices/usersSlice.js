@@ -41,5 +41,4 @@ const usersSlice = createSlice({
                 })
         }
 });
-export const { fetchUsersFailure, fetchUsersSuccess, fetchUsersRequest } = usersSlice.actions;
 export default usersSlice.reducer;
